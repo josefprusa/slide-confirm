@@ -11,35 +11,35 @@ INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
 LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */ /* global Reflect, Promise, SuppressedError, Symbol, Iterator */ var $ebd43e508017a710$var$extendStatics = function(d, b) {
-    $ebd43e508017a710$var$extendStatics = Object.setPrototypeOf || ({
+***************************************************************************** */ /* global Reflect, Promise, SuppressedError, Symbol, Iterator */ var $24c52f343453d62d$var$extendStatics = function(d, b) {
+    $24c52f343453d62d$var$extendStatics = Object.setPrototypeOf || ({
         __proto__: []
     }) instanceof Array && function(d, b) {
         d.__proto__ = b;
     } || function(d, b) {
         for(var p in b)if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p];
     };
-    return $ebd43e508017a710$var$extendStatics(d, b);
+    return $24c52f343453d62d$var$extendStatics(d, b);
 };
-function $ebd43e508017a710$export$a8ba968b8961cb8a(d, b) {
+function $24c52f343453d62d$export$a8ba968b8961cb8a(d, b) {
     if (typeof b !== "function" && b !== null) throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-    $ebd43e508017a710$var$extendStatics(d, b);
+    $24c52f343453d62d$var$extendStatics(d, b);
     function __() {
         this.constructor = d;
     }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
-var $ebd43e508017a710$export$18ce0697a983be9b = function() {
-    $ebd43e508017a710$export$18ce0697a983be9b = Object.assign || function __assign(t) {
+var $24c52f343453d62d$export$18ce0697a983be9b = function() {
+    $24c52f343453d62d$export$18ce0697a983be9b = Object.assign || function __assign(t) {
         for(var s, i = 1, n = arguments.length; i < n; i++){
             s = arguments[i];
             for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
         }
         return t;
     };
-    return $ebd43e508017a710$export$18ce0697a983be9b.apply(this, arguments);
+    return $24c52f343453d62d$export$18ce0697a983be9b.apply(this, arguments);
 };
-function $ebd43e508017a710$export$3c9a16f847548506(s, e) {
+function $24c52f343453d62d$export$3c9a16f847548506(s, e) {
     var t = {};
     for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
     if (s != null && typeof Object.getOwnPropertySymbols === "function") {
@@ -47,18 +47,18 @@ function $ebd43e508017a710$export$3c9a16f847548506(s, e) {
     }
     return t;
 }
-function $ebd43e508017a710$export$29e00dfd3077644b(decorators, target, key, desc) {
+function $24c52f343453d62d$export$29e00dfd3077644b(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for(var i = decorators.length - 1; i >= 0; i--)if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 }
-function $ebd43e508017a710$export$d5ad3fd78186038f(paramIndex, decorator) {
+function $24c52f343453d62d$export$d5ad3fd78186038f(paramIndex, decorator) {
     return function(target, key) {
         decorator(target, key, paramIndex);
     };
 }
-function $ebd43e508017a710$export$3a84e1ae4e97e9b0(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
+function $24c52f343453d62d$export$3a84e1ae4e97e9b0(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
     function accept(f) {
         if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected");
         return f;
@@ -93,25 +93,25 @@ function $ebd43e508017a710$export$3a84e1ae4e97e9b0(ctor, descriptorIn, decorator
     if (target) Object.defineProperty(target, contextIn.name, descriptor);
     done = true;
 }
-function $ebd43e508017a710$export$d831c04e792af3d(thisArg, initializers, value) {
+function $24c52f343453d62d$export$d831c04e792af3d(thisArg, initializers, value) {
     var useValue = arguments.length > 2;
     for(var i = 0; i < initializers.length; i++)value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
     return useValue ? value : void 0;
 }
-function $ebd43e508017a710$export$6a2a36740a146cb8(x) {
+function $24c52f343453d62d$export$6a2a36740a146cb8(x) {
     return typeof x === "symbol" ? x : "".concat(x);
 }
-function $ebd43e508017a710$export$d1a06452d3489bc7(f, name, prefix) {
+function $24c52f343453d62d$export$d1a06452d3489bc7(f, name, prefix) {
     if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
     return Object.defineProperty(f, "name", {
         configurable: true,
         value: prefix ? "".concat(prefix, " ", name) : name
     });
 }
-function $ebd43e508017a710$export$f1db080c865becb9(metadataKey, metadataValue) {
+function $24c52f343453d62d$export$f1db080c865becb9(metadataKey, metadataValue) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
 }
-function $ebd43e508017a710$export$1050f835b63b671e(thisArg, _arguments, P, generator) {
+function $24c52f343453d62d$export$1050f835b63b671e(thisArg, _arguments, P, generator) {
     function adopt(value) {
         return value instanceof P ? value : new P(function(resolve) {
             resolve(value);
@@ -138,7 +138,7 @@ function $ebd43e508017a710$export$1050f835b63b671e(thisArg, _arguments, P, gener
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 }
-function $ebd43e508017a710$export$67ebef60e6f28a6(thisArg, body) {
+function $24c52f343453d62d$export$67ebef60e6f28a6(thisArg, body) {
     var _ = {
         label: 0,
         sent: function() {
@@ -229,7 +229,7 @@ function $ebd43e508017a710$export$67ebef60e6f28a6(thisArg, body) {
         };
     }
 }
-var $ebd43e508017a710$export$45d3717a4c69092e = Object.create ? function(o, m, k, k2) {
+var $24c52f343453d62d$export$45d3717a4c69092e = Object.create ? function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
     if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
@@ -243,10 +243,10 @@ var $ebd43e508017a710$export$45d3717a4c69092e = Object.create ? function(o, m, k
     if (k2 === undefined) k2 = k;
     o[k2] = m[k];
 };
-function $ebd43e508017a710$export$f33643c0debef087(m, o) {
-    for(var p in m)if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) $ebd43e508017a710$export$45d3717a4c69092e(o, m, p);
+function $24c52f343453d62d$export$f33643c0debef087(m, o) {
+    for(var p in m)if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) $24c52f343453d62d$export$45d3717a4c69092e(o, m, p);
 }
-function $ebd43e508017a710$export$19a8beecd37a4c45(o) {
+function $24c52f343453d62d$export$19a8beecd37a4c45(o) {
     var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
     if (m) return m.call(o);
     if (o && typeof o.length === "number") return {
@@ -260,7 +260,7 @@ function $ebd43e508017a710$export$19a8beecd37a4c45(o) {
     };
     throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
 }
-function $ebd43e508017a710$export$8d051b38c9118094(o, n) {
+function $24c52f343453d62d$export$8d051b38c9118094(o, n) {
     var m = typeof Symbol === "function" && o[Symbol.iterator];
     if (!m) return o;
     var i = m.call(o), r, ar = [], e;
@@ -279,16 +279,16 @@ function $ebd43e508017a710$export$8d051b38c9118094(o, n) {
     }
     return ar;
 }
-function $ebd43e508017a710$export$afc72e2116322959() {
-    for(var ar = [], i = 0; i < arguments.length; i++)ar = ar.concat($ebd43e508017a710$export$8d051b38c9118094(arguments[i]));
+function $24c52f343453d62d$export$afc72e2116322959() {
+    for(var ar = [], i = 0; i < arguments.length; i++)ar = ar.concat($24c52f343453d62d$export$8d051b38c9118094(arguments[i]));
     return ar;
 }
-function $ebd43e508017a710$export$6388937ca91ccae8() {
+function $24c52f343453d62d$export$6388937ca91ccae8() {
     for(var s = 0, i = 0, il = arguments.length; i < il; i++)s += arguments[i].length;
     for(var r = Array(s), k = 0, i = 0; i < il; i++)for(var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)r[k] = a[j];
     return r;
 }
-function $ebd43e508017a710$export$1216008129fb82ed(to, from, pack) {
+function $24c52f343453d62d$export$1216008129fb82ed(to, from, pack) {
     if (pack || arguments.length === 2) {
         for(var i = 0, l = from.length, ar; i < l; i++)if (ar || !(i in from)) {
             if (!ar) ar = Array.prototype.slice.call(from, 0, i);
@@ -297,10 +297,10 @@ function $ebd43e508017a710$export$1216008129fb82ed(to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 }
-function $ebd43e508017a710$export$10c90e4f7922046c(v) {
-    return this instanceof $ebd43e508017a710$export$10c90e4f7922046c ? (this.v = v, this) : new $ebd43e508017a710$export$10c90e4f7922046c(v);
+function $24c52f343453d62d$export$10c90e4f7922046c(v) {
+    return this instanceof $24c52f343453d62d$export$10c90e4f7922046c ? (this.v = v, this) : new $24c52f343453d62d$export$10c90e4f7922046c(v);
 }
-function $ebd43e508017a710$export$e427f37a30a4de9b(thisArg, _arguments, generator) {
+function $24c52f343453d62d$export$e427f37a30a4de9b(thisArg, _arguments, generator) {
     if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
     var g = generator.apply(thisArg, _arguments || []), i, q = [];
     return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function() {
@@ -334,7 +334,7 @@ function $ebd43e508017a710$export$e427f37a30a4de9b(thisArg, _arguments, generato
         }
     }
     function step(r) {
-        r.value instanceof $ebd43e508017a710$export$10c90e4f7922046c ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
+        r.value instanceof $24c52f343453d62d$export$10c90e4f7922046c ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
     }
     function fulfill(value) {
         resume("next", value);
@@ -346,7 +346,7 @@ function $ebd43e508017a710$export$e427f37a30a4de9b(thisArg, _arguments, generato
         if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]);
     }
 }
-function $ebd43e508017a710$export$bbd80228419bb833(o) {
+function $24c52f343453d62d$export$bbd80228419bb833(o) {
     var i, p;
     return i = {}, verb("next"), verb("throw", function(e) {
         throw e;
@@ -356,16 +356,16 @@ function $ebd43e508017a710$export$bbd80228419bb833(o) {
     function verb(n, f) {
         i[n] = o[n] ? function(v) {
             return (p = !p) ? {
-                value: $ebd43e508017a710$export$10c90e4f7922046c(o[n](v)),
+                value: $24c52f343453d62d$export$10c90e4f7922046c(o[n](v)),
                 done: false
             } : f ? f(v) : v;
         } : f;
     }
 }
-function $ebd43e508017a710$export$e3b29a3d6162315f(o) {
+function $24c52f343453d62d$export$e3b29a3d6162315f(o) {
     if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
     var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof $ebd43e508017a710$export$19a8beecd37a4c45 === "function" ? $ebd43e508017a710$export$19a8beecd37a4c45(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+    return m ? m.call(o) : (o = typeof $24c52f343453d62d$export$19a8beecd37a4c45 === "function" ? $24c52f343453d62d$export$19a8beecd37a4c45(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
         return this;
     }, i);
     function verb(n) {
@@ -384,14 +384,14 @@ function $ebd43e508017a710$export$e3b29a3d6162315f(o) {
         }, reject);
     }
 }
-function $ebd43e508017a710$export$4fb47efe1390b86f(cooked, raw) {
+function $24c52f343453d62d$export$4fb47efe1390b86f(cooked, raw) {
     if (Object.defineProperty) Object.defineProperty(cooked, "raw", {
         value: raw
     });
     else cooked.raw = raw;
     return cooked;
 }
-var $ebd43e508017a710$var$__setModuleDefault = Object.create ? function(o, v) {
+var $24c52f343453d62d$var$__setModuleDefault = Object.create ? function(o, v) {
     Object.defineProperty(o, "default", {
         enumerable: true,
         value: v
@@ -399,44 +399,44 @@ var $ebd43e508017a710$var$__setModuleDefault = Object.create ? function(o, v) {
 } : function(o, v) {
     o["default"] = v;
 };
-var $ebd43e508017a710$var$ownKeys = function(o) {
-    $ebd43e508017a710$var$ownKeys = Object.getOwnPropertyNames || function(o) {
+var $24c52f343453d62d$var$ownKeys = function(o) {
+    $24c52f343453d62d$var$ownKeys = Object.getOwnPropertyNames || function(o) {
         var ar = [];
         for(var k in o)if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
         return ar;
     };
-    return $ebd43e508017a710$var$ownKeys(o);
+    return $24c52f343453d62d$var$ownKeys(o);
 };
-function $ebd43e508017a710$export$c21735bcef00d192(mod) {
+function $24c52f343453d62d$export$c21735bcef00d192(mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
     if (mod != null) {
-        for(var k = $ebd43e508017a710$var$ownKeys(mod), i = 0; i < k.length; i++)if (k[i] !== "default") $ebd43e508017a710$export$45d3717a4c69092e(result, mod, k[i]);
+        for(var k = $24c52f343453d62d$var$ownKeys(mod), i = 0; i < k.length; i++)if (k[i] !== "default") $24c52f343453d62d$export$45d3717a4c69092e(result, mod, k[i]);
     }
-    $ebd43e508017a710$var$__setModuleDefault(result, mod);
+    $24c52f343453d62d$var$__setModuleDefault(result, mod);
     return result;
 }
-function $ebd43e508017a710$export$da59b14a69baef04(mod) {
+function $24c52f343453d62d$export$da59b14a69baef04(mod) {
     return mod && mod.__esModule ? mod : {
         default: mod
     };
 }
-function $ebd43e508017a710$export$d5dcaf168c640c35(receiver, state, kind, f) {
+function $24c52f343453d62d$export$d5dcaf168c640c35(receiver, state, kind, f) {
     if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
     if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 }
-function $ebd43e508017a710$export$d40a35129aaff81f(receiver, state, value, kind, f) {
+function $24c52f343453d62d$export$d40a35129aaff81f(receiver, state, value, kind, f) {
     if (kind === "m") throw new TypeError("Private method is not writable");
     if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
     if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
     return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
 }
-function $ebd43e508017a710$export$81fdc39f203e4e04(state, receiver) {
+function $24c52f343453d62d$export$81fdc39f203e4e04(state, receiver) {
     if (receiver === null || typeof receiver !== "object" && typeof receiver !== "function") throw new TypeError("Cannot use 'in' operator on non-object");
     return typeof state === "function" ? receiver === state : state.has(receiver);
 }
-function $ebd43e508017a710$export$88ac25d8e944e405(env, value, async) {
+function $24c52f343453d62d$export$88ac25d8e944e405(env, value, async) {
     if (value !== null && value !== void 0) {
         if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
         var dispose, inner;
@@ -467,13 +467,13 @@ function $ebd43e508017a710$export$88ac25d8e944e405(env, value, async) {
     });
     return value;
 }
-var $ebd43e508017a710$var$_SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function(error, suppressed, message) {
+var $24c52f343453d62d$var$_SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function(error, suppressed, message) {
     var e = new Error(message);
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
-function $ebd43e508017a710$export$8f076105dc360e92(env) {
+function $24c52f343453d62d$export$8f076105dc360e92(env) {
     function fail(e) {
-        env.error = env.hasError ? new $ebd43e508017a710$var$_SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
+        env.error = env.hasError ? new $24c52f343453d62d$var$_SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
         env.hasError = true;
     }
     var r, s = 0;
@@ -495,45 +495,45 @@ function $ebd43e508017a710$export$8f076105dc360e92(env) {
     }
     return next();
 }
-function $ebd43e508017a710$export$889dfb5d17574b0b(path, preserveJsx) {
+function $24c52f343453d62d$export$889dfb5d17574b0b(path, preserveJsx) {
     if (typeof path === "string" && /^\.\.?\//.test(path)) return path.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, function(m, tsx, d, ext, cm) {
         return tsx ? preserveJsx ? ".jsx" : ".js" : d && (!ext || !cm) ? m : d + ext + "." + cm.toLowerCase() + "js";
     });
     return path;
 }
-var $ebd43e508017a710$export$2e2bcd8739ae039 = {
-    __extends: $ebd43e508017a710$export$a8ba968b8961cb8a,
-    __assign: $ebd43e508017a710$export$18ce0697a983be9b,
-    __rest: $ebd43e508017a710$export$3c9a16f847548506,
-    __decorate: $ebd43e508017a710$export$29e00dfd3077644b,
-    __param: $ebd43e508017a710$export$d5ad3fd78186038f,
-    __esDecorate: $ebd43e508017a710$export$3a84e1ae4e97e9b0,
-    __runInitializers: $ebd43e508017a710$export$d831c04e792af3d,
-    __propKey: $ebd43e508017a710$export$6a2a36740a146cb8,
-    __setFunctionName: $ebd43e508017a710$export$d1a06452d3489bc7,
-    __metadata: $ebd43e508017a710$export$f1db080c865becb9,
-    __awaiter: $ebd43e508017a710$export$1050f835b63b671e,
-    __generator: $ebd43e508017a710$export$67ebef60e6f28a6,
-    __createBinding: $ebd43e508017a710$export$45d3717a4c69092e,
-    __exportStar: $ebd43e508017a710$export$f33643c0debef087,
-    __values: $ebd43e508017a710$export$19a8beecd37a4c45,
-    __read: $ebd43e508017a710$export$8d051b38c9118094,
-    __spread: $ebd43e508017a710$export$afc72e2116322959,
-    __spreadArrays: $ebd43e508017a710$export$6388937ca91ccae8,
-    __spreadArray: $ebd43e508017a710$export$1216008129fb82ed,
-    __await: $ebd43e508017a710$export$10c90e4f7922046c,
-    __asyncGenerator: $ebd43e508017a710$export$e427f37a30a4de9b,
-    __asyncDelegator: $ebd43e508017a710$export$bbd80228419bb833,
-    __asyncValues: $ebd43e508017a710$export$e3b29a3d6162315f,
-    __makeTemplateObject: $ebd43e508017a710$export$4fb47efe1390b86f,
-    __importStar: $ebd43e508017a710$export$c21735bcef00d192,
-    __importDefault: $ebd43e508017a710$export$da59b14a69baef04,
-    __classPrivateFieldGet: $ebd43e508017a710$export$d5dcaf168c640c35,
-    __classPrivateFieldSet: $ebd43e508017a710$export$d40a35129aaff81f,
-    __classPrivateFieldIn: $ebd43e508017a710$export$81fdc39f203e4e04,
-    __addDisposableResource: $ebd43e508017a710$export$88ac25d8e944e405,
-    __disposeResources: $ebd43e508017a710$export$8f076105dc360e92,
-    __rewriteRelativeImportExtension: $ebd43e508017a710$export$889dfb5d17574b0b
+var $24c52f343453d62d$export$2e2bcd8739ae039 = {
+    __extends: $24c52f343453d62d$export$a8ba968b8961cb8a,
+    __assign: $24c52f343453d62d$export$18ce0697a983be9b,
+    __rest: $24c52f343453d62d$export$3c9a16f847548506,
+    __decorate: $24c52f343453d62d$export$29e00dfd3077644b,
+    __param: $24c52f343453d62d$export$d5ad3fd78186038f,
+    __esDecorate: $24c52f343453d62d$export$3a84e1ae4e97e9b0,
+    __runInitializers: $24c52f343453d62d$export$d831c04e792af3d,
+    __propKey: $24c52f343453d62d$export$6a2a36740a146cb8,
+    __setFunctionName: $24c52f343453d62d$export$d1a06452d3489bc7,
+    __metadata: $24c52f343453d62d$export$f1db080c865becb9,
+    __awaiter: $24c52f343453d62d$export$1050f835b63b671e,
+    __generator: $24c52f343453d62d$export$67ebef60e6f28a6,
+    __createBinding: $24c52f343453d62d$export$45d3717a4c69092e,
+    __exportStar: $24c52f343453d62d$export$f33643c0debef087,
+    __values: $24c52f343453d62d$export$19a8beecd37a4c45,
+    __read: $24c52f343453d62d$export$8d051b38c9118094,
+    __spread: $24c52f343453d62d$export$afc72e2116322959,
+    __spreadArrays: $24c52f343453d62d$export$6388937ca91ccae8,
+    __spreadArray: $24c52f343453d62d$export$1216008129fb82ed,
+    __await: $24c52f343453d62d$export$10c90e4f7922046c,
+    __asyncGenerator: $24c52f343453d62d$export$e427f37a30a4de9b,
+    __asyncDelegator: $24c52f343453d62d$export$bbd80228419bb833,
+    __asyncValues: $24c52f343453d62d$export$e3b29a3d6162315f,
+    __makeTemplateObject: $24c52f343453d62d$export$4fb47efe1390b86f,
+    __importStar: $24c52f343453d62d$export$c21735bcef00d192,
+    __importDefault: $24c52f343453d62d$export$da59b14a69baef04,
+    __classPrivateFieldGet: $24c52f343453d62d$export$d5dcaf168c640c35,
+    __classPrivateFieldSet: $24c52f343453d62d$export$d40a35129aaff81f,
+    __classPrivateFieldIn: $24c52f343453d62d$export$81fdc39f203e4e04,
+    __addDisposableResource: $24c52f343453d62d$export$88ac25d8e944e405,
+    __disposeResources: $24c52f343453d62d$export$8f076105dc360e92,
+    __rewriteRelativeImportExtension: $24c52f343453d62d$export$889dfb5d17574b0b
 };
 
 
@@ -541,18 +541,18 @@ var $ebd43e508017a710$export$2e2bcd8739ae039 = {
  * @license
  * Copyright 2019 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */ const $53e576283d0b4ca1$var$t = window, $53e576283d0b4ca1$export$b4d10f6001c083c2 = $53e576283d0b4ca1$var$t.ShadowRoot && (void 0 === $53e576283d0b4ca1$var$t.ShadyCSS || $53e576283d0b4ca1$var$t.ShadyCSS.nativeShadow) && "adoptedStyleSheets" in Document.prototype && "replace" in CSSStyleSheet.prototype, $53e576283d0b4ca1$var$s = Symbol(), $53e576283d0b4ca1$var$n = new WeakMap;
-class $53e576283d0b4ca1$export$505d1e8739bad805 {
+ */ const $def2de46b9306e8a$var$t = window, $def2de46b9306e8a$export$b4d10f6001c083c2 = $def2de46b9306e8a$var$t.ShadowRoot && (void 0 === $def2de46b9306e8a$var$t.ShadyCSS || $def2de46b9306e8a$var$t.ShadyCSS.nativeShadow) && "adoptedStyleSheets" in Document.prototype && "replace" in CSSStyleSheet.prototype, $def2de46b9306e8a$var$s = Symbol(), $def2de46b9306e8a$var$n = new WeakMap;
+class $def2de46b9306e8a$export$505d1e8739bad805 {
     constructor(t, e, n){
-        if (this._$cssResult$ = !0, n !== $53e576283d0b4ca1$var$s) throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");
+        if (this._$cssResult$ = !0, n !== $def2de46b9306e8a$var$s) throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");
         this.cssText = t, this.t = e;
     }
     get styleSheet() {
         let t = this.o;
         const s = this.t;
-        if ($53e576283d0b4ca1$export$b4d10f6001c083c2 && void 0 === t) {
+        if ($def2de46b9306e8a$export$b4d10f6001c083c2 && void 0 === t) {
             const e = void 0 !== s && 1 === s.length;
-            e && (t = $53e576283d0b4ca1$var$n.get(s)), void 0 === t && ((this.o = t = new CSSStyleSheet).replaceSync(this.cssText), e && $53e576283d0b4ca1$var$n.set(s, t));
+            e && (t = $def2de46b9306e8a$var$n.get(s)), void 0 === t && ((this.o = t = new CSSStyleSheet).replaceSync(this.cssText), e && $def2de46b9306e8a$var$n.set(s, t));
         }
         return t;
     }
@@ -560,22 +560,22 @@ class $53e576283d0b4ca1$export$505d1e8739bad805 {
         return this.cssText;
     }
 }
-const $53e576283d0b4ca1$export$8d80f9cac07cdb3 = (t)=>new $53e576283d0b4ca1$export$505d1e8739bad805("string" == typeof t ? t : t + "", void 0, $53e576283d0b4ca1$var$s), $53e576283d0b4ca1$export$dbf350e5966cf602 = (t, ...e)=>{
+const $def2de46b9306e8a$export$8d80f9cac07cdb3 = (t)=>new $def2de46b9306e8a$export$505d1e8739bad805("string" == typeof t ? t : t + "", void 0, $def2de46b9306e8a$var$s), $def2de46b9306e8a$export$dbf350e5966cf602 = (t, ...e)=>{
     const n = 1 === t.length ? t[0] : e.reduce((e, s, n)=>e + ((t)=>{
             if (!0 === t._$cssResult$) return t.cssText;
             if ("number" == typeof t) return t;
             throw Error("Value passed to 'css' function must be a 'css' function result: " + t + ". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.");
         })(s) + t[n + 1], t[0]);
-    return new $53e576283d0b4ca1$export$505d1e8739bad805(n, t, $53e576283d0b4ca1$var$s);
-}, $53e576283d0b4ca1$export$2ca4a66ec4cecb90 = (s, n)=>{
-    $53e576283d0b4ca1$export$b4d10f6001c083c2 ? s.adoptedStyleSheets = n.map((t)=>t instanceof CSSStyleSheet ? t : t.styleSheet) : n.forEach((e)=>{
-        const n = document.createElement("style"), o = $53e576283d0b4ca1$var$t.litNonce;
+    return new $def2de46b9306e8a$export$505d1e8739bad805(n, t, $def2de46b9306e8a$var$s);
+}, $def2de46b9306e8a$export$2ca4a66ec4cecb90 = (s, n)=>{
+    $def2de46b9306e8a$export$b4d10f6001c083c2 ? s.adoptedStyleSheets = n.map((t)=>t instanceof CSSStyleSheet ? t : t.styleSheet) : n.forEach((e)=>{
+        const n = document.createElement("style"), o = $def2de46b9306e8a$var$t.litNonce;
         void 0 !== o && n.setAttribute("nonce", o), n.textContent = e.cssText, s.appendChild(n);
     });
-}, $53e576283d0b4ca1$export$ee69dfd951e24778 = $53e576283d0b4ca1$export$b4d10f6001c083c2 ? (t)=>t : (t)=>t instanceof CSSStyleSheet ? ((t)=>{
+}, $def2de46b9306e8a$export$ee69dfd951e24778 = $def2de46b9306e8a$export$b4d10f6001c083c2 ? (t)=>t : (t)=>t instanceof CSSStyleSheet ? ((t)=>{
         let e = "";
         for (const s of t.cssRules)e += s.cssText;
-        return $53e576283d0b4ca1$export$8d80f9cac07cdb3(e);
+        return $def2de46b9306e8a$export$8d80f9cac07cdb3(e);
     })(t) : t;
 
 
@@ -583,12 +583,12 @@ const $53e576283d0b4ca1$export$8d80f9cac07cdb3 = (t)=>new $53e576283d0b4ca1$expo
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */ var $b22ad1691173679b$var$s;
-const $b22ad1691173679b$var$e = window, $b22ad1691173679b$var$r = $b22ad1691173679b$var$e.trustedTypes, $b22ad1691173679b$var$h = $b22ad1691173679b$var$r ? $b22ad1691173679b$var$r.emptyScript : "", $b22ad1691173679b$var$o = $b22ad1691173679b$var$e.reactiveElementPolyfillSupport, $b22ad1691173679b$export$7312b35fbf521afb = {
+ */ var $19fe8e3abedf4df0$var$s;
+const $19fe8e3abedf4df0$var$e = window, $19fe8e3abedf4df0$var$r = $19fe8e3abedf4df0$var$e.trustedTypes, $19fe8e3abedf4df0$var$h = $19fe8e3abedf4df0$var$r ? $19fe8e3abedf4df0$var$r.emptyScript : "", $19fe8e3abedf4df0$var$o = $19fe8e3abedf4df0$var$e.reactiveElementPolyfillSupport, $19fe8e3abedf4df0$export$7312b35fbf521afb = {
     toAttribute (t, i) {
         switch(i){
             case Boolean:
-                t = t ? $b22ad1691173679b$var$h : null;
+                t = t ? $19fe8e3abedf4df0$var$h : null;
                 break;
             case Object:
             case Array:
@@ -615,14 +615,14 @@ const $b22ad1691173679b$var$e = window, $b22ad1691173679b$var$r = $b22ad16911736
         }
         return s;
     }
-}, $b22ad1691173679b$export$53a6892c50694894 = (t, i)=>i !== t && (i == i || t == t), $b22ad1691173679b$var$l = {
+}, $19fe8e3abedf4df0$export$53a6892c50694894 = (t, i)=>i !== t && (i == i || t == t), $19fe8e3abedf4df0$var$l = {
     attribute: !0,
     type: String,
-    converter: $b22ad1691173679b$export$7312b35fbf521afb,
+    converter: $19fe8e3abedf4df0$export$7312b35fbf521afb,
     reflect: !1,
-    hasChanged: $b22ad1691173679b$export$53a6892c50694894
-}, $b22ad1691173679b$var$d = "finalized";
-class $b22ad1691173679b$export$c7c07a37856565d extends HTMLElement {
+    hasChanged: $19fe8e3abedf4df0$export$53a6892c50694894
+}, $19fe8e3abedf4df0$var$d = "finalized";
+class $19fe8e3abedf4df0$export$c7c07a37856565d extends HTMLElement {
     constructor(){
         super(), this._$Ei = new Map, this.isUpdatePending = !1, this.hasUpdated = !1, this._$El = null, this._$Eu();
     }
@@ -638,7 +638,7 @@ class $b22ad1691173679b$export$c7c07a37856565d extends HTMLElement {
             void 0 !== e && (this._$Ev.set(e, s), t.push(e));
         }), t;
     }
-    static createProperty(t, i = $b22ad1691173679b$var$l) {
+    static createProperty(t, i = $19fe8e3abedf4df0$var$l) {
         if (i.state && (i.attribute = !1), this.finalize(), this.elementProperties.set(t, i), !i.noAccessor && !this.prototype.hasOwnProperty(t)) {
             const s = "symbol" == typeof t ? Symbol() : "__" + t, e = this.getPropertyDescriptor(t, s, i);
             void 0 !== e && Object.defineProperty(this.prototype, t, e);
@@ -658,11 +658,11 @@ class $b22ad1691173679b$export$c7c07a37856565d extends HTMLElement {
         };
     }
     static getPropertyOptions(t) {
-        return this.elementProperties.get(t) || $b22ad1691173679b$var$l;
+        return this.elementProperties.get(t) || $19fe8e3abedf4df0$var$l;
     }
     static finalize() {
-        if (this.hasOwnProperty($b22ad1691173679b$var$d)) return !1;
-        this[$b22ad1691173679b$var$d] = !0;
+        if (this.hasOwnProperty($19fe8e3abedf4df0$var$d)) return !1;
+        this[$19fe8e3abedf4df0$var$d] = !0;
         const t = Object.getPrototypeOf(this);
         if (t.finalize(), void 0 !== t.h && (this.h = [
             ...t.h
@@ -679,8 +679,8 @@ class $b22ad1691173679b$export$c7c07a37856565d extends HTMLElement {
         const s = [];
         if (Array.isArray(i)) {
             const e = new Set(i.flat(1 / 0).reverse());
-            for (const i of e)s.unshift((0, $53e576283d0b4ca1$export$ee69dfd951e24778)(i));
-        } else void 0 !== i && s.push((0, $53e576283d0b4ca1$export$ee69dfd951e24778)(i));
+            for (const i of e)s.unshift((0, $def2de46b9306e8a$export$ee69dfd951e24778)(i));
+        } else void 0 !== i && s.push((0, $def2de46b9306e8a$export$ee69dfd951e24778)(i));
         return s;
     }
     static _$Ep(t, i) {
@@ -707,7 +707,7 @@ class $b22ad1691173679b$export$c7c07a37856565d extends HTMLElement {
     createRenderRoot() {
         var t;
         const s = null !== (t = this.shadowRoot) && void 0 !== t ? t : this.attachShadow(this.constructor.shadowRootOptions);
-        return (0, $53e576283d0b4ca1$export$2ca4a66ec4cecb90)(s, this.constructor.elementStyles), s;
+        return (0, $def2de46b9306e8a$export$2ca4a66ec4cecb90)(s, this.constructor.elementStyles), s;
     }
     connectedCallback() {
         var t;
@@ -727,11 +727,11 @@ class $b22ad1691173679b$export$c7c07a37856565d extends HTMLElement {
     attributeChangedCallback(t, i, s) {
         this._$AK(t, s);
     }
-    _$EO(t, i, s = $b22ad1691173679b$var$l) {
+    _$EO(t, i, s = $19fe8e3abedf4df0$var$l) {
         var e;
         const r = this.constructor._$Ep(t, s);
         if (void 0 !== r && !0 === s.reflect) {
-            const h = (void 0 !== (null === (e = s.converter) || void 0 === e ? void 0 : e.toAttribute) ? s.converter : $b22ad1691173679b$export$7312b35fbf521afb).toAttribute(i, s.type);
+            const h = (void 0 !== (null === (e = s.converter) || void 0 === e ? void 0 : e.toAttribute) ? s.converter : $19fe8e3abedf4df0$export$7312b35fbf521afb).toAttribute(i, s.type);
             this._$El = t, null == h ? this.removeAttribute(r) : this.setAttribute(r, h), this._$El = null;
         }
     }
@@ -741,13 +741,13 @@ class $b22ad1691173679b$export$c7c07a37856565d extends HTMLElement {
         if (void 0 !== r && this._$El !== r) {
             const t = e.getPropertyOptions(r), h = "function" == typeof t.converter ? {
                 fromAttribute: t.converter
-            } : void 0 !== (null === (s = t.converter) || void 0 === s ? void 0 : s.fromAttribute) ? t.converter : $b22ad1691173679b$export$7312b35fbf521afb;
+            } : void 0 !== (null === (s = t.converter) || void 0 === s ? void 0 : s.fromAttribute) ? t.converter : $19fe8e3abedf4df0$export$7312b35fbf521afb;
             this._$El = r, this[r] = h.fromAttribute(i, t.type), this._$El = null;
         }
     }
     requestUpdate(t, i, s) {
         let e = !0;
-        void 0 !== t && (((s = s || this.constructor.getPropertyOptions(t)).hasChanged || $b22ad1691173679b$export$53a6892c50694894)(this[t], i) ? (this._$AL.has(t) || this._$AL.set(t, i), !0 === s.reflect && this._$El !== t && (void 0 === this._$EC && (this._$EC = new Map), this._$EC.set(t, s))) : e = !1), !this.isUpdatePending && e && (this._$E_ = this._$Ej());
+        void 0 !== t && (((s = s || this.constructor.getPropertyOptions(t)).hasChanged || $19fe8e3abedf4df0$export$53a6892c50694894)(this[t], i) ? (this._$AL.has(t) || this._$AL.set(t, i), !0 === s.reflect && this._$El !== t && (void 0 === this._$EC && (this._$EC = new Map), this._$EC.set(t, s))) : e = !1), !this.isUpdatePending && e && (this._$E_ = this._$Ej());
     }
     async _$Ej() {
         this.isUpdatePending = !0;
@@ -804,68 +804,68 @@ class $b22ad1691173679b$export$c7c07a37856565d extends HTMLElement {
     updated(t) {}
     firstUpdated(t) {}
 }
-$b22ad1691173679b$export$c7c07a37856565d[$b22ad1691173679b$var$d] = !0, $b22ad1691173679b$export$c7c07a37856565d.elementProperties = new Map, $b22ad1691173679b$export$c7c07a37856565d.elementStyles = [], $b22ad1691173679b$export$c7c07a37856565d.shadowRootOptions = {
+$19fe8e3abedf4df0$export$c7c07a37856565d[$19fe8e3abedf4df0$var$d] = !0, $19fe8e3abedf4df0$export$c7c07a37856565d.elementProperties = new Map, $19fe8e3abedf4df0$export$c7c07a37856565d.elementStyles = [], $19fe8e3abedf4df0$export$c7c07a37856565d.shadowRootOptions = {
     mode: "open"
-}, null == $b22ad1691173679b$var$o || $b22ad1691173679b$var$o({
-    ReactiveElement: $b22ad1691173679b$export$c7c07a37856565d
-}), (null !== ($b22ad1691173679b$var$s = $b22ad1691173679b$var$e.reactiveElementVersions) && void 0 !== $b22ad1691173679b$var$s ? $b22ad1691173679b$var$s : $b22ad1691173679b$var$e.reactiveElementVersions = []).push("1.6.3");
+}, null == $19fe8e3abedf4df0$var$o || $19fe8e3abedf4df0$var$o({
+    ReactiveElement: $19fe8e3abedf4df0$export$c7c07a37856565d
+}), (null !== ($19fe8e3abedf4df0$var$s = $19fe8e3abedf4df0$var$e.reactiveElementVersions) && void 0 !== $19fe8e3abedf4df0$var$s ? $19fe8e3abedf4df0$var$s : $19fe8e3abedf4df0$var$e.reactiveElementVersions = []).push("1.6.3");
 
 
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */ var $1cb21db0eb1a0be5$var$t;
-const $1cb21db0eb1a0be5$var$i = window, $1cb21db0eb1a0be5$var$s = $1cb21db0eb1a0be5$var$i.trustedTypes, $1cb21db0eb1a0be5$var$e = $1cb21db0eb1a0be5$var$s ? $1cb21db0eb1a0be5$var$s.createPolicy("lit-html", {
+ */ var $f58f44579a4747ac$var$t;
+const $f58f44579a4747ac$var$i = window, $f58f44579a4747ac$var$s = $f58f44579a4747ac$var$i.trustedTypes, $f58f44579a4747ac$var$e = $f58f44579a4747ac$var$s ? $f58f44579a4747ac$var$s.createPolicy("lit-html", {
     createHTML: (t)=>t
-}) : void 0, $1cb21db0eb1a0be5$var$o = "$lit$", $1cb21db0eb1a0be5$var$n = `lit$${(Math.random() + "").slice(9)}$`, $1cb21db0eb1a0be5$var$l = "?" + $1cb21db0eb1a0be5$var$n, $1cb21db0eb1a0be5$var$h = `<${$1cb21db0eb1a0be5$var$l}>`, $1cb21db0eb1a0be5$var$r = document, $1cb21db0eb1a0be5$var$u = ()=>$1cb21db0eb1a0be5$var$r.createComment(""), $1cb21db0eb1a0be5$var$d = (t)=>null === t || "object" != typeof t && "function" != typeof t, $1cb21db0eb1a0be5$var$c = Array.isArray, $1cb21db0eb1a0be5$var$v = (t)=>$1cb21db0eb1a0be5$var$c(t) || "function" == typeof (null == t ? void 0 : t[Symbol.iterator]), $1cb21db0eb1a0be5$var$a = "[ \t\n\f\r]", $1cb21db0eb1a0be5$var$f = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, $1cb21db0eb1a0be5$var$_ = /-->/g, $1cb21db0eb1a0be5$var$m = />/g, $1cb21db0eb1a0be5$var$p = RegExp(`>|${$1cb21db0eb1a0be5$var$a}(?:([^\\s"'>=/]+)(${$1cb21db0eb1a0be5$var$a}*=${$1cb21db0eb1a0be5$var$a}*(?:[^ \t\n\f\r"'\`<>=]|("|')|))|$)`, "g"), $1cb21db0eb1a0be5$var$g = /'/g, $1cb21db0eb1a0be5$var$$ = /"/g, $1cb21db0eb1a0be5$var$y = /^(?:script|style|textarea|title)$/i, $1cb21db0eb1a0be5$var$w = (t)=>(i, ...s)=>({
+}) : void 0, $f58f44579a4747ac$var$o = "$lit$", $f58f44579a4747ac$var$n = `lit$${(Math.random() + "").slice(9)}$`, $f58f44579a4747ac$var$l = "?" + $f58f44579a4747ac$var$n, $f58f44579a4747ac$var$h = `<${$f58f44579a4747ac$var$l}>`, $f58f44579a4747ac$var$r = document, $f58f44579a4747ac$var$u = ()=>$f58f44579a4747ac$var$r.createComment(""), $f58f44579a4747ac$var$d = (t)=>null === t || "object" != typeof t && "function" != typeof t, $f58f44579a4747ac$var$c = Array.isArray, $f58f44579a4747ac$var$v = (t)=>$f58f44579a4747ac$var$c(t) || "function" == typeof (null == t ? void 0 : t[Symbol.iterator]), $f58f44579a4747ac$var$a = "[ \t\n\f\r]", $f58f44579a4747ac$var$f = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, $f58f44579a4747ac$var$_ = /-->/g, $f58f44579a4747ac$var$m = />/g, $f58f44579a4747ac$var$p = RegExp(`>|${$f58f44579a4747ac$var$a}(?:([^\\s"'>=/]+)(${$f58f44579a4747ac$var$a}*=${$f58f44579a4747ac$var$a}*(?:[^ \t\n\f\r"'\`<>=]|("|')|))|$)`, "g"), $f58f44579a4747ac$var$g = /'/g, $f58f44579a4747ac$var$$ = /"/g, $f58f44579a4747ac$var$y = /^(?:script|style|textarea|title)$/i, $f58f44579a4747ac$var$w = (t)=>(i, ...s)=>({
             _$litType$: t,
             strings: i,
             values: s
-        }), $1cb21db0eb1a0be5$export$c0bb0b647f701bb5 = $1cb21db0eb1a0be5$var$w(1), $1cb21db0eb1a0be5$export$7ed1367e7fa1ad68 = $1cb21db0eb1a0be5$var$w(2), $1cb21db0eb1a0be5$export$9c068ae9cc5db4e8 = Symbol.for("lit-noChange"), $1cb21db0eb1a0be5$export$45b790e32b2810ee = Symbol.for("lit-nothing"), $1cb21db0eb1a0be5$var$E = new WeakMap, $1cb21db0eb1a0be5$var$C = $1cb21db0eb1a0be5$var$r.createTreeWalker($1cb21db0eb1a0be5$var$r, 129, null, !1);
-function $1cb21db0eb1a0be5$var$P(t, i) {
+        }), $f58f44579a4747ac$export$c0bb0b647f701bb5 = $f58f44579a4747ac$var$w(1), $f58f44579a4747ac$export$7ed1367e7fa1ad68 = $f58f44579a4747ac$var$w(2), $f58f44579a4747ac$export$9c068ae9cc5db4e8 = Symbol.for("lit-noChange"), $f58f44579a4747ac$export$45b790e32b2810ee = Symbol.for("lit-nothing"), $f58f44579a4747ac$var$E = new WeakMap, $f58f44579a4747ac$var$C = $f58f44579a4747ac$var$r.createTreeWalker($f58f44579a4747ac$var$r, 129, null, !1);
+function $f58f44579a4747ac$var$P(t, i) {
     if (!Array.isArray(t) || !t.hasOwnProperty("raw")) throw Error("invalid template strings array");
-    return void 0 !== $1cb21db0eb1a0be5$var$e ? $1cb21db0eb1a0be5$var$e.createHTML(i) : i;
+    return void 0 !== $f58f44579a4747ac$var$e ? $f58f44579a4747ac$var$e.createHTML(i) : i;
 }
-const $1cb21db0eb1a0be5$var$V = (t, i)=>{
+const $f58f44579a4747ac$var$V = (t, i)=>{
     const s = t.length - 1, e = [];
-    let l, r = 2 === i ? "<svg>" : "", u = $1cb21db0eb1a0be5$var$f;
+    let l, r = 2 === i ? "<svg>" : "", u = $f58f44579a4747ac$var$f;
     for(let i = 0; i < s; i++){
         const s = t[i];
         let d, c, v = -1, a = 0;
-        for(; a < s.length && (u.lastIndex = a, c = u.exec(s), null !== c);)a = u.lastIndex, u === $1cb21db0eb1a0be5$var$f ? "!--" === c[1] ? u = $1cb21db0eb1a0be5$var$_ : void 0 !== c[1] ? u = $1cb21db0eb1a0be5$var$m : void 0 !== c[2] ? ($1cb21db0eb1a0be5$var$y.test(c[2]) && (l = RegExp("</" + c[2], "g")), u = $1cb21db0eb1a0be5$var$p) : void 0 !== c[3] && (u = $1cb21db0eb1a0be5$var$p) : u === $1cb21db0eb1a0be5$var$p ? ">" === c[0] ? (u = null != l ? l : $1cb21db0eb1a0be5$var$f, v = -1) : void 0 === c[1] ? v = -2 : (v = u.lastIndex - c[2].length, d = c[1], u = void 0 === c[3] ? $1cb21db0eb1a0be5$var$p : '"' === c[3] ? $1cb21db0eb1a0be5$var$$ : $1cb21db0eb1a0be5$var$g) : u === $1cb21db0eb1a0be5$var$$ || u === $1cb21db0eb1a0be5$var$g ? u = $1cb21db0eb1a0be5$var$p : u === $1cb21db0eb1a0be5$var$_ || u === $1cb21db0eb1a0be5$var$m ? u = $1cb21db0eb1a0be5$var$f : (u = $1cb21db0eb1a0be5$var$p, l = void 0);
-        const w = u === $1cb21db0eb1a0be5$var$p && t[i + 1].startsWith("/>") ? " " : "";
-        r += u === $1cb21db0eb1a0be5$var$f ? s + $1cb21db0eb1a0be5$var$h : v >= 0 ? (e.push(d), s.slice(0, v) + $1cb21db0eb1a0be5$var$o + s.slice(v) + $1cb21db0eb1a0be5$var$n + w) : s + $1cb21db0eb1a0be5$var$n + (-2 === v ? (e.push(void 0), i) : w);
+        for(; a < s.length && (u.lastIndex = a, c = u.exec(s), null !== c);)a = u.lastIndex, u === $f58f44579a4747ac$var$f ? "!--" === c[1] ? u = $f58f44579a4747ac$var$_ : void 0 !== c[1] ? u = $f58f44579a4747ac$var$m : void 0 !== c[2] ? ($f58f44579a4747ac$var$y.test(c[2]) && (l = RegExp("</" + c[2], "g")), u = $f58f44579a4747ac$var$p) : void 0 !== c[3] && (u = $f58f44579a4747ac$var$p) : u === $f58f44579a4747ac$var$p ? ">" === c[0] ? (u = null != l ? l : $f58f44579a4747ac$var$f, v = -1) : void 0 === c[1] ? v = -2 : (v = u.lastIndex - c[2].length, d = c[1], u = void 0 === c[3] ? $f58f44579a4747ac$var$p : '"' === c[3] ? $f58f44579a4747ac$var$$ : $f58f44579a4747ac$var$g) : u === $f58f44579a4747ac$var$$ || u === $f58f44579a4747ac$var$g ? u = $f58f44579a4747ac$var$p : u === $f58f44579a4747ac$var$_ || u === $f58f44579a4747ac$var$m ? u = $f58f44579a4747ac$var$f : (u = $f58f44579a4747ac$var$p, l = void 0);
+        const w = u === $f58f44579a4747ac$var$p && t[i + 1].startsWith("/>") ? " " : "";
+        r += u === $f58f44579a4747ac$var$f ? s + $f58f44579a4747ac$var$h : v >= 0 ? (e.push(d), s.slice(0, v) + $f58f44579a4747ac$var$o + s.slice(v) + $f58f44579a4747ac$var$n + w) : s + $f58f44579a4747ac$var$n + (-2 === v ? (e.push(void 0), i) : w);
     }
     return [
-        $1cb21db0eb1a0be5$var$P(t, r + (t[s] || "<?>") + (2 === i ? "</svg>" : "")),
+        $f58f44579a4747ac$var$P(t, r + (t[s] || "<?>") + (2 === i ? "</svg>" : "")),
         e
     ];
 };
-class $1cb21db0eb1a0be5$var$N {
+class $f58f44579a4747ac$var$N {
     constructor({ strings: t, _$litType$: i }, e){
         let h;
         this.parts = [];
         let r = 0, d = 0;
-        const c = t.length - 1, v = this.parts, [a, f] = $1cb21db0eb1a0be5$var$V(t, i);
-        if (this.el = $1cb21db0eb1a0be5$var$N.createElement(a, e), $1cb21db0eb1a0be5$var$C.currentNode = this.el.content, 2 === i) {
+        const c = t.length - 1, v = this.parts, [a, f] = $f58f44579a4747ac$var$V(t, i);
+        if (this.el = $f58f44579a4747ac$var$N.createElement(a, e), $f58f44579a4747ac$var$C.currentNode = this.el.content, 2 === i) {
             const t = this.el.content, i = t.firstChild;
             i.remove(), t.append(...i.childNodes);
         }
-        for(; null !== (h = $1cb21db0eb1a0be5$var$C.nextNode()) && v.length < c;){
+        for(; null !== (h = $f58f44579a4747ac$var$C.nextNode()) && v.length < c;){
             if (1 === h.nodeType) {
                 if (h.hasAttributes()) {
                     const t = [];
-                    for (const i of h.getAttributeNames())if (i.endsWith($1cb21db0eb1a0be5$var$o) || i.startsWith($1cb21db0eb1a0be5$var$n)) {
+                    for (const i of h.getAttributeNames())if (i.endsWith($f58f44579a4747ac$var$o) || i.startsWith($f58f44579a4747ac$var$n)) {
                         const s = f[d++];
                         if (t.push(i), void 0 !== s) {
-                            const t = h.getAttribute(s.toLowerCase() + $1cb21db0eb1a0be5$var$o).split($1cb21db0eb1a0be5$var$n), i = /([.?@])?(.*)/.exec(s);
+                            const t = h.getAttribute(s.toLowerCase() + $f58f44579a4747ac$var$o).split($f58f44579a4747ac$var$n), i = /([.?@])?(.*)/.exec(s);
                             v.push({
                                 type: 1,
                                 index: r,
                                 name: i[2],
                                 strings: t,
-                                ctor: "." === i[1] ? $1cb21db0eb1a0be5$var$H : "?" === i[1] ? $1cb21db0eb1a0be5$var$L : "@" === i[1] ? $1cb21db0eb1a0be5$var$z : $1cb21db0eb1a0be5$var$k
+                                ctor: "." === i[1] ? $f58f44579a4747ac$var$H : "?" === i[1] ? $f58f44579a4747ac$var$L : "@" === i[1] ? $f58f44579a4747ac$var$z : $f58f44579a4747ac$var$k
                             });
                         } else v.push({
                             type: 6,
@@ -874,46 +874,46 @@ class $1cb21db0eb1a0be5$var$N {
                     }
                     for (const i of t)h.removeAttribute(i);
                 }
-                if ($1cb21db0eb1a0be5$var$y.test(h.tagName)) {
-                    const t = h.textContent.split($1cb21db0eb1a0be5$var$n), i = t.length - 1;
+                if ($f58f44579a4747ac$var$y.test(h.tagName)) {
+                    const t = h.textContent.split($f58f44579a4747ac$var$n), i = t.length - 1;
                     if (i > 0) {
-                        h.textContent = $1cb21db0eb1a0be5$var$s ? $1cb21db0eb1a0be5$var$s.emptyScript : "";
-                        for(let s = 0; s < i; s++)h.append(t[s], $1cb21db0eb1a0be5$var$u()), $1cb21db0eb1a0be5$var$C.nextNode(), v.push({
+                        h.textContent = $f58f44579a4747ac$var$s ? $f58f44579a4747ac$var$s.emptyScript : "";
+                        for(let s = 0; s < i; s++)h.append(t[s], $f58f44579a4747ac$var$u()), $f58f44579a4747ac$var$C.nextNode(), v.push({
                             type: 2,
                             index: ++r
                         });
-                        h.append(t[i], $1cb21db0eb1a0be5$var$u());
+                        h.append(t[i], $f58f44579a4747ac$var$u());
                     }
                 }
             } else if (8 === h.nodeType) {
-                if (h.data === $1cb21db0eb1a0be5$var$l) v.push({
+                if (h.data === $f58f44579a4747ac$var$l) v.push({
                     type: 2,
                     index: r
                 });
                 else {
                     let t = -1;
-                    for(; -1 !== (t = h.data.indexOf($1cb21db0eb1a0be5$var$n, t + 1));)v.push({
+                    for(; -1 !== (t = h.data.indexOf($f58f44579a4747ac$var$n, t + 1));)v.push({
                         type: 7,
                         index: r
-                    }), t += $1cb21db0eb1a0be5$var$n.length - 1;
+                    }), t += $f58f44579a4747ac$var$n.length - 1;
                 }
             }
             r++;
         }
     }
     static createElement(t, i) {
-        const s = $1cb21db0eb1a0be5$var$r.createElement("template");
+        const s = $f58f44579a4747ac$var$r.createElement("template");
         return s.innerHTML = t, s;
     }
 }
-function $1cb21db0eb1a0be5$var$S(t, i, s = t, e) {
+function $f58f44579a4747ac$var$S(t, i, s = t, e) {
     var o, n, l, h;
-    if (i === $1cb21db0eb1a0be5$export$9c068ae9cc5db4e8) return i;
+    if (i === $f58f44579a4747ac$export$9c068ae9cc5db4e8) return i;
     let r = void 0 !== e ? null === (o = s._$Co) || void 0 === o ? void 0 : o[e] : s._$Cl;
-    const u = $1cb21db0eb1a0be5$var$d(i) ? void 0 : i._$litDirective$;
-    return (null == r ? void 0 : r.constructor) !== u && (null === (n = null == r ? void 0 : r._$AO) || void 0 === n || n.call(r, !1), void 0 === u ? r = void 0 : (r = new u(t), r._$AT(t, s, e)), void 0 !== e ? (null !== (l = (h = s)._$Co) && void 0 !== l ? l : h._$Co = [])[e] = r : s._$Cl = r), void 0 !== r && (i = $1cb21db0eb1a0be5$var$S(t, r._$AS(t, i.values), r, e)), i;
+    const u = $f58f44579a4747ac$var$d(i) ? void 0 : i._$litDirective$;
+    return (null == r ? void 0 : r.constructor) !== u && (null === (n = null == r ? void 0 : r._$AO) || void 0 === n || n.call(r, !1), void 0 === u ? r = void 0 : (r = new u(t), r._$AT(t, s, e)), void 0 !== e ? (null !== (l = (h = s)._$Co) && void 0 !== l ? l : h._$Co = [])[e] = r : s._$Cl = r), void 0 !== r && (i = $f58f44579a4747ac$var$S(t, r._$AS(t, i.values), r, e)), i;
 }
-class $1cb21db0eb1a0be5$var$M {
+class $f58f44579a4747ac$var$M {
     constructor(t, i){
         this._$AV = [], this._$AN = void 0, this._$AD = t, this._$AM = i;
     }
@@ -925,27 +925,27 @@ class $1cb21db0eb1a0be5$var$M {
     }
     u(t) {
         var i;
-        const { el: { content: s }, parts: e } = this._$AD, o = (null !== (i = null == t ? void 0 : t.creationScope) && void 0 !== i ? i : $1cb21db0eb1a0be5$var$r).importNode(s, !0);
-        $1cb21db0eb1a0be5$var$C.currentNode = o;
-        let n = $1cb21db0eb1a0be5$var$C.nextNode(), l = 0, h = 0, u = e[0];
+        const { el: { content: s }, parts: e } = this._$AD, o = (null !== (i = null == t ? void 0 : t.creationScope) && void 0 !== i ? i : $f58f44579a4747ac$var$r).importNode(s, !0);
+        $f58f44579a4747ac$var$C.currentNode = o;
+        let n = $f58f44579a4747ac$var$C.nextNode(), l = 0, h = 0, u = e[0];
         for(; void 0 !== u;){
             if (l === u.index) {
                 let i;
-                2 === u.type ? i = new $1cb21db0eb1a0be5$var$R(n, n.nextSibling, this, t) : 1 === u.type ? i = new u.ctor(n, u.name, u.strings, this, t) : 6 === u.type && (i = new $1cb21db0eb1a0be5$var$Z(n, this, t)), this._$AV.push(i), u = e[++h];
+                2 === u.type ? i = new $f58f44579a4747ac$var$R(n, n.nextSibling, this, t) : 1 === u.type ? i = new u.ctor(n, u.name, u.strings, this, t) : 6 === u.type && (i = new $f58f44579a4747ac$var$Z(n, this, t)), this._$AV.push(i), u = e[++h];
             }
-            l !== (null == u ? void 0 : u.index) && (n = $1cb21db0eb1a0be5$var$C.nextNode(), l++);
+            l !== (null == u ? void 0 : u.index) && (n = $f58f44579a4747ac$var$C.nextNode(), l++);
         }
-        return $1cb21db0eb1a0be5$var$C.currentNode = $1cb21db0eb1a0be5$var$r, o;
+        return $f58f44579a4747ac$var$C.currentNode = $f58f44579a4747ac$var$r, o;
     }
     v(t) {
         let i = 0;
         for (const s of this._$AV)void 0 !== s && (void 0 !== s.strings ? (s._$AI(t, s, i), i += s.strings.length - 2) : s._$AI(t[i])), i++;
     }
 }
-class $1cb21db0eb1a0be5$var$R {
+class $f58f44579a4747ac$var$R {
     constructor(t, i, s, e){
         var o;
-        this.type = 2, this._$AH = $1cb21db0eb1a0be5$export$45b790e32b2810ee, this._$AN = void 0, this._$AA = t, this._$AB = i, this._$AM = s, this.options = e, this._$Cp = null === (o = null == e ? void 0 : e.isConnected) || void 0 === o || o;
+        this.type = 2, this._$AH = $f58f44579a4747ac$export$45b790e32b2810ee, this._$AN = void 0, this._$AA = t, this._$AB = i, this._$AM = s, this.options = e, this._$Cp = null === (o = null == e ? void 0 : e.isConnected) || void 0 === o || o;
     }
     get _$AU() {
         var t, i;
@@ -963,7 +963,7 @@ class $1cb21db0eb1a0be5$var$R {
         return this._$AB;
     }
     _$AI(t, i = this) {
-        t = $1cb21db0eb1a0be5$var$S(this, t, i), $1cb21db0eb1a0be5$var$d(t) ? t === $1cb21db0eb1a0be5$export$45b790e32b2810ee || null == t || "" === t ? (this._$AH !== $1cb21db0eb1a0be5$export$45b790e32b2810ee && this._$AR(), this._$AH = $1cb21db0eb1a0be5$export$45b790e32b2810ee) : t !== this._$AH && t !== $1cb21db0eb1a0be5$export$9c068ae9cc5db4e8 && this._(t) : void 0 !== t._$litType$ ? this.g(t) : void 0 !== t.nodeType ? this.$(t) : $1cb21db0eb1a0be5$var$v(t) ? this.T(t) : this._(t);
+        t = $f58f44579a4747ac$var$S(this, t, i), $f58f44579a4747ac$var$d(t) ? t === $f58f44579a4747ac$export$45b790e32b2810ee || null == t || "" === t ? (this._$AH !== $f58f44579a4747ac$export$45b790e32b2810ee && this._$AR(), this._$AH = $f58f44579a4747ac$export$45b790e32b2810ee) : t !== this._$AH && t !== $f58f44579a4747ac$export$9c068ae9cc5db4e8 && this._(t) : void 0 !== t._$litType$ ? this.g(t) : void 0 !== t.nodeType ? this.$(t) : $f58f44579a4747ac$var$v(t) ? this.T(t) : this._(t);
     }
     k(t) {
         return this._$AA.parentNode.insertBefore(t, this._$AB);
@@ -972,26 +972,26 @@ class $1cb21db0eb1a0be5$var$R {
         this._$AH !== t && (this._$AR(), this._$AH = this.k(t));
     }
     _(t) {
-        this._$AH !== $1cb21db0eb1a0be5$export$45b790e32b2810ee && $1cb21db0eb1a0be5$var$d(this._$AH) ? this._$AA.nextSibling.data = t : this.$($1cb21db0eb1a0be5$var$r.createTextNode(t)), this._$AH = t;
+        this._$AH !== $f58f44579a4747ac$export$45b790e32b2810ee && $f58f44579a4747ac$var$d(this._$AH) ? this._$AA.nextSibling.data = t : this.$($f58f44579a4747ac$var$r.createTextNode(t)), this._$AH = t;
     }
     g(t) {
         var i;
-        const { values: s, _$litType$: e } = t, o = "number" == typeof e ? this._$AC(t) : (void 0 === e.el && (e.el = $1cb21db0eb1a0be5$var$N.createElement($1cb21db0eb1a0be5$var$P(e.h, e.h[0]), this.options)), e);
+        const { values: s, _$litType$: e } = t, o = "number" == typeof e ? this._$AC(t) : (void 0 === e.el && (e.el = $f58f44579a4747ac$var$N.createElement($f58f44579a4747ac$var$P(e.h, e.h[0]), this.options)), e);
         if ((null === (i = this._$AH) || void 0 === i ? void 0 : i._$AD) === o) this._$AH.v(s);
         else {
-            const t = new $1cb21db0eb1a0be5$var$M(o, this), i = t.u(this.options);
+            const t = new $f58f44579a4747ac$var$M(o, this), i = t.u(this.options);
             t.v(s), this.$(i), this._$AH = t;
         }
     }
     _$AC(t) {
-        let i = $1cb21db0eb1a0be5$var$E.get(t.strings);
-        return void 0 === i && $1cb21db0eb1a0be5$var$E.set(t.strings, i = new $1cb21db0eb1a0be5$var$N(t)), i;
+        let i = $f58f44579a4747ac$var$E.get(t.strings);
+        return void 0 === i && $f58f44579a4747ac$var$E.set(t.strings, i = new $f58f44579a4747ac$var$N(t)), i;
     }
     T(t) {
-        $1cb21db0eb1a0be5$var$c(this._$AH) || (this._$AH = [], this._$AR());
+        $f58f44579a4747ac$var$c(this._$AH) || (this._$AH = [], this._$AR());
         const i = this._$AH;
         let s, e = 0;
-        for (const o of t)e === i.length ? i.push(s = new $1cb21db0eb1a0be5$var$R(this.k($1cb21db0eb1a0be5$var$u()), this.k($1cb21db0eb1a0be5$var$u()), this, this.options)) : s = i[e], s._$AI(o), e++;
+        for (const o of t)e === i.length ? i.push(s = new $f58f44579a4747ac$var$R(this.k($f58f44579a4747ac$var$u()), this.k($f58f44579a4747ac$var$u()), this, this.options)) : s = i[e], s._$AI(o), e++;
         e < i.length && (this._$AR(s && s._$AB.nextSibling, e), i.length = e);
     }
     _$AR(t = this._$AA.nextSibling, i) {
@@ -1006,9 +1006,9 @@ class $1cb21db0eb1a0be5$var$R {
         void 0 === this._$AM && (this._$Cp = t, null === (i = this._$AP) || void 0 === i || i.call(this, t));
     }
 }
-class $1cb21db0eb1a0be5$var$k {
+class $f58f44579a4747ac$var$k {
     constructor(t, i, s, e, o){
-        this.type = 1, this._$AH = $1cb21db0eb1a0be5$export$45b790e32b2810ee, this._$AN = void 0, this.element = t, this.name = i, this._$AM = e, this.options = o, s.length > 2 || "" !== s[0] || "" !== s[1] ? (this._$AH = Array(s.length - 1).fill(new String), this.strings = s) : this._$AH = $1cb21db0eb1a0be5$export$45b790e32b2810ee;
+        this.type = 1, this._$AH = $f58f44579a4747ac$export$45b790e32b2810ee, this._$AN = void 0, this.element = t, this.name = i, this._$AM = e, this.options = o, s.length > 2 || "" !== s[0] || "" !== s[1] ? (this._$AH = Array(s.length - 1).fill(new String), this.strings = s) : this._$AH = $f58f44579a4747ac$export$45b790e32b2810ee;
     }
     get tagName() {
         return this.element.tagName;
@@ -1019,43 +1019,43 @@ class $1cb21db0eb1a0be5$var$k {
     _$AI(t, i = this, s, e) {
         const o = this.strings;
         let n = !1;
-        if (void 0 === o) t = $1cb21db0eb1a0be5$var$S(this, t, i, 0), n = !$1cb21db0eb1a0be5$var$d(t) || t !== this._$AH && t !== $1cb21db0eb1a0be5$export$9c068ae9cc5db4e8, n && (this._$AH = t);
+        if (void 0 === o) t = $f58f44579a4747ac$var$S(this, t, i, 0), n = !$f58f44579a4747ac$var$d(t) || t !== this._$AH && t !== $f58f44579a4747ac$export$9c068ae9cc5db4e8, n && (this._$AH = t);
         else {
             const e = t;
             let l, h;
-            for(t = o[0], l = 0; l < o.length - 1; l++)h = $1cb21db0eb1a0be5$var$S(this, e[s + l], i, l), h === $1cb21db0eb1a0be5$export$9c068ae9cc5db4e8 && (h = this._$AH[l]), n || (n = !$1cb21db0eb1a0be5$var$d(h) || h !== this._$AH[l]), h === $1cb21db0eb1a0be5$export$45b790e32b2810ee ? t = $1cb21db0eb1a0be5$export$45b790e32b2810ee : t !== $1cb21db0eb1a0be5$export$45b790e32b2810ee && (t += (null != h ? h : "") + o[l + 1]), this._$AH[l] = h;
+            for(t = o[0], l = 0; l < o.length - 1; l++)h = $f58f44579a4747ac$var$S(this, e[s + l], i, l), h === $f58f44579a4747ac$export$9c068ae9cc5db4e8 && (h = this._$AH[l]), n || (n = !$f58f44579a4747ac$var$d(h) || h !== this._$AH[l]), h === $f58f44579a4747ac$export$45b790e32b2810ee ? t = $f58f44579a4747ac$export$45b790e32b2810ee : t !== $f58f44579a4747ac$export$45b790e32b2810ee && (t += (null != h ? h : "") + o[l + 1]), this._$AH[l] = h;
         }
         n && !e && this.j(t);
     }
     j(t) {
-        t === $1cb21db0eb1a0be5$export$45b790e32b2810ee ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, null != t ? t : "");
+        t === $f58f44579a4747ac$export$45b790e32b2810ee ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, null != t ? t : "");
     }
 }
-class $1cb21db0eb1a0be5$var$H extends $1cb21db0eb1a0be5$var$k {
+class $f58f44579a4747ac$var$H extends $f58f44579a4747ac$var$k {
     constructor(){
         super(...arguments), this.type = 3;
     }
     j(t) {
-        this.element[this.name] = t === $1cb21db0eb1a0be5$export$45b790e32b2810ee ? void 0 : t;
+        this.element[this.name] = t === $f58f44579a4747ac$export$45b790e32b2810ee ? void 0 : t;
     }
 }
-const $1cb21db0eb1a0be5$var$I = $1cb21db0eb1a0be5$var$s ? $1cb21db0eb1a0be5$var$s.emptyScript : "";
-class $1cb21db0eb1a0be5$var$L extends $1cb21db0eb1a0be5$var$k {
+const $f58f44579a4747ac$var$I = $f58f44579a4747ac$var$s ? $f58f44579a4747ac$var$s.emptyScript : "";
+class $f58f44579a4747ac$var$L extends $f58f44579a4747ac$var$k {
     constructor(){
         super(...arguments), this.type = 4;
     }
     j(t) {
-        t && t !== $1cb21db0eb1a0be5$export$45b790e32b2810ee ? this.element.setAttribute(this.name, $1cb21db0eb1a0be5$var$I) : this.element.removeAttribute(this.name);
+        t && t !== $f58f44579a4747ac$export$45b790e32b2810ee ? this.element.setAttribute(this.name, $f58f44579a4747ac$var$I) : this.element.removeAttribute(this.name);
     }
 }
-class $1cb21db0eb1a0be5$var$z extends $1cb21db0eb1a0be5$var$k {
+class $f58f44579a4747ac$var$z extends $f58f44579a4747ac$var$k {
     constructor(t, i, s, e, o){
         super(t, i, s, e, o), this.type = 5;
     }
     _$AI(t, i = this) {
         var s;
-        if ((t = null !== (s = $1cb21db0eb1a0be5$var$S(this, t, i, 0)) && void 0 !== s ? s : $1cb21db0eb1a0be5$export$45b790e32b2810ee) === $1cb21db0eb1a0be5$export$9c068ae9cc5db4e8) return;
-        const e = this._$AH, o = t === $1cb21db0eb1a0be5$export$45b790e32b2810ee && e !== $1cb21db0eb1a0be5$export$45b790e32b2810ee || t.capture !== e.capture || t.once !== e.once || t.passive !== e.passive, n = t !== $1cb21db0eb1a0be5$export$45b790e32b2810ee && (e === $1cb21db0eb1a0be5$export$45b790e32b2810ee || o);
+        if ((t = null !== (s = $f58f44579a4747ac$var$S(this, t, i, 0)) && void 0 !== s ? s : $f58f44579a4747ac$export$45b790e32b2810ee) === $f58f44579a4747ac$export$9c068ae9cc5db4e8) return;
+        const e = this._$AH, o = t === $f58f44579a4747ac$export$45b790e32b2810ee && e !== $f58f44579a4747ac$export$45b790e32b2810ee || t.capture !== e.capture || t.once !== e.once || t.passive !== e.passive, n = t !== $f58f44579a4747ac$export$45b790e32b2810ee && (e === $f58f44579a4747ac$export$45b790e32b2810ee || o);
         o && this.element.removeEventListener(this.name, this, e), n && this.element.addEventListener(this.name, this, t), this._$AH = t;
     }
     handleEvent(t) {
@@ -1063,7 +1063,7 @@ class $1cb21db0eb1a0be5$var$z extends $1cb21db0eb1a0be5$var$k {
         "function" == typeof this._$AH ? this._$AH.call(null !== (s = null === (i = this.options) || void 0 === i ? void 0 : i.host) && void 0 !== s ? s : this.element, t) : this._$AH.handleEvent(t);
     }
 }
-class $1cb21db0eb1a0be5$var$Z {
+class $f58f44579a4747ac$var$Z {
     constructor(t, i, s){
         this.element = t, this.type = 6, this._$AN = void 0, this._$AM = i, this.options = s;
     }
@@ -1071,33 +1071,33 @@ class $1cb21db0eb1a0be5$var$Z {
         return this._$AM._$AU;
     }
     _$AI(t) {
-        $1cb21db0eb1a0be5$var$S(this, t);
+        $f58f44579a4747ac$var$S(this, t);
     }
 }
-const $1cb21db0eb1a0be5$export$8613d1ca9052b22e = {
-    O: $1cb21db0eb1a0be5$var$o,
-    P: $1cb21db0eb1a0be5$var$n,
-    A: $1cb21db0eb1a0be5$var$l,
+const $f58f44579a4747ac$export$8613d1ca9052b22e = {
+    O: $f58f44579a4747ac$var$o,
+    P: $f58f44579a4747ac$var$n,
+    A: $f58f44579a4747ac$var$l,
     C: 1,
-    M: $1cb21db0eb1a0be5$var$V,
-    L: $1cb21db0eb1a0be5$var$M,
-    R: $1cb21db0eb1a0be5$var$v,
-    D: $1cb21db0eb1a0be5$var$S,
-    I: $1cb21db0eb1a0be5$var$R,
-    V: $1cb21db0eb1a0be5$var$k,
-    H: $1cb21db0eb1a0be5$var$L,
-    N: $1cb21db0eb1a0be5$var$z,
-    U: $1cb21db0eb1a0be5$var$H,
-    F: $1cb21db0eb1a0be5$var$Z
-}, $1cb21db0eb1a0be5$var$B = $1cb21db0eb1a0be5$var$i.litHtmlPolyfillSupport;
-null == $1cb21db0eb1a0be5$var$B || $1cb21db0eb1a0be5$var$B($1cb21db0eb1a0be5$var$N, $1cb21db0eb1a0be5$var$R), (null !== ($1cb21db0eb1a0be5$var$t = $1cb21db0eb1a0be5$var$i.litHtmlVersions) && void 0 !== $1cb21db0eb1a0be5$var$t ? $1cb21db0eb1a0be5$var$t : $1cb21db0eb1a0be5$var$i.litHtmlVersions = []).push("2.8.0");
-const $1cb21db0eb1a0be5$export$b3890eb0ae9dca99 = (t, i, s)=>{
+    M: $f58f44579a4747ac$var$V,
+    L: $f58f44579a4747ac$var$M,
+    R: $f58f44579a4747ac$var$v,
+    D: $f58f44579a4747ac$var$S,
+    I: $f58f44579a4747ac$var$R,
+    V: $f58f44579a4747ac$var$k,
+    H: $f58f44579a4747ac$var$L,
+    N: $f58f44579a4747ac$var$z,
+    U: $f58f44579a4747ac$var$H,
+    F: $f58f44579a4747ac$var$Z
+}, $f58f44579a4747ac$var$B = $f58f44579a4747ac$var$i.litHtmlPolyfillSupport;
+null == $f58f44579a4747ac$var$B || $f58f44579a4747ac$var$B($f58f44579a4747ac$var$N, $f58f44579a4747ac$var$R), (null !== ($f58f44579a4747ac$var$t = $f58f44579a4747ac$var$i.litHtmlVersions) && void 0 !== $f58f44579a4747ac$var$t ? $f58f44579a4747ac$var$t : $f58f44579a4747ac$var$i.litHtmlVersions = []).push("2.8.0");
+const $f58f44579a4747ac$export$b3890eb0ae9dca99 = (t, i, s)=>{
     var e, o;
     const n = null !== (e = null == s ? void 0 : s.renderBefore) && void 0 !== e ? e : i;
     let l = n._$litPart$;
     if (void 0 === l) {
         const t = null !== (o = null == s ? void 0 : s.renderBefore) && void 0 !== o ? o : null;
-        n._$litPart$ = l = new $1cb21db0eb1a0be5$var$R(i.insertBefore($1cb21db0eb1a0be5$var$u(), t), t, void 0, null != s ? s : {});
+        n._$litPart$ = l = new $f58f44579a4747ac$var$R(i.insertBefore($f58f44579a4747ac$var$u(), t), t, void 0, null != s ? s : {});
     }
     return l._$AI(t), l;
 };
@@ -1109,9 +1109,9 @@ const $1cb21db0eb1a0be5$export$b3890eb0ae9dca99 = (t, i, s)=>{
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */ var $2c5bcddb34c9a397$var$l, $2c5bcddb34c9a397$var$o;
-const $2c5bcddb34c9a397$export$8bf27daf9e8907c9 = (0, $b22ad1691173679b$export$c7c07a37856565d);
-class $2c5bcddb34c9a397$export$3f2f9f5909897157 extends (0, $b22ad1691173679b$export$c7c07a37856565d) {
+ */ var $ab210b2da7b39b9d$var$l, $ab210b2da7b39b9d$var$o;
+const $ab210b2da7b39b9d$export$8bf27daf9e8907c9 = (0, $19fe8e3abedf4df0$export$c7c07a37856565d);
+class $ab210b2da7b39b9d$export$3f2f9f5909897157 extends (0, $19fe8e3abedf4df0$export$c7c07a37856565d) {
     constructor(){
         super(...arguments), this.renderOptions = {
             host: this
@@ -1124,7 +1124,7 @@ class $2c5bcddb34c9a397$export$3f2f9f5909897157 extends (0, $b22ad1691173679b$ex
     }
     update(t) {
         const i = this.render();
-        this.hasUpdated || (this.renderOptions.isConnected = this.isConnected), super.update(t), this._$Do = (0, $1cb21db0eb1a0be5$export$b3890eb0ae9dca99)(i, this.renderRoot, this.renderOptions);
+        this.hasUpdated || (this.renderOptions.isConnected = this.isConnected), super.update(t), this._$Do = (0, $f58f44579a4747ac$export$b3890eb0ae9dca99)(i, this.renderRoot, this.renderOptions);
     }
     connectedCallback() {
         var t;
@@ -1135,30 +1135,30 @@ class $2c5bcddb34c9a397$export$3f2f9f5909897157 extends (0, $b22ad1691173679b$ex
         super.disconnectedCallback(), null === (t = this._$Do) || void 0 === t || t.setConnected(!1);
     }
     render() {
-        return 0, $1cb21db0eb1a0be5$export$9c068ae9cc5db4e8;
+        return 0, $f58f44579a4747ac$export$9c068ae9cc5db4e8;
     }
 }
-$2c5bcddb34c9a397$export$3f2f9f5909897157.finalized = !0, $2c5bcddb34c9a397$export$3f2f9f5909897157._$litElement$ = !0, null === ($2c5bcddb34c9a397$var$l = globalThis.litElementHydrateSupport) || void 0 === $2c5bcddb34c9a397$var$l || $2c5bcddb34c9a397$var$l.call(globalThis, {
-    LitElement: $2c5bcddb34c9a397$export$3f2f9f5909897157
+$ab210b2da7b39b9d$export$3f2f9f5909897157.finalized = !0, $ab210b2da7b39b9d$export$3f2f9f5909897157._$litElement$ = !0, null === ($ab210b2da7b39b9d$var$l = globalThis.litElementHydrateSupport) || void 0 === $ab210b2da7b39b9d$var$l || $ab210b2da7b39b9d$var$l.call(globalThis, {
+    LitElement: $ab210b2da7b39b9d$export$3f2f9f5909897157
 });
-const $2c5bcddb34c9a397$var$n = globalThis.litElementPolyfillSupport;
-null == $2c5bcddb34c9a397$var$n || $2c5bcddb34c9a397$var$n({
-    LitElement: $2c5bcddb34c9a397$export$3f2f9f5909897157
+const $ab210b2da7b39b9d$var$n = globalThis.litElementPolyfillSupport;
+null == $ab210b2da7b39b9d$var$n || $ab210b2da7b39b9d$var$n({
+    LitElement: $ab210b2da7b39b9d$export$3f2f9f5909897157
 });
-const $2c5bcddb34c9a397$export$f5c524615a7708d6 = {
+const $ab210b2da7b39b9d$export$f5c524615a7708d6 = {
     _$AK: (t, e, i)=>{
         t._$AK(e, i);
     },
     _$AL: (t)=>t._$AL
 };
-(null !== ($2c5bcddb34c9a397$var$o = globalThis.litElementVersions) && void 0 !== $2c5bcddb34c9a397$var$o ? $2c5bcddb34c9a397$var$o : globalThis.litElementVersions = []).push("3.3.3");
+(null !== ($ab210b2da7b39b9d$var$o = globalThis.litElementVersions) && void 0 !== $ab210b2da7b39b9d$var$o ? $ab210b2da7b39b9d$var$o : globalThis.litElementVersions = []).push("3.3.3");
 
 
 /**
  * @license
  * Copyright 2022 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */ const $7d73aec7fd8dd996$export$6acf61af03e62db = !1;
+ */ const $a00bca1a101a9088$export$6acf61af03e62db = !1;
 
 
 
@@ -1167,7 +1167,7 @@ const $2c5bcddb34c9a397$export$f5c524615a7708d6 = {
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */ const $8fbcd235ba38df66$var$i = (i, e)=>"method" === e.kind && e.descriptor && !("value" in e.descriptor) ? {
+ */ const $9cd908ed2625c047$var$i = (i, e)=>"method" === e.kind && e.descriptor && !("value" in e.descriptor) ? {
         ...e,
         finisher (n) {
             n.createProperty(e.key, i);
@@ -1184,11 +1184,11 @@ const $2c5bcddb34c9a397$export$f5c524615a7708d6 = {
         finisher (n) {
             n.createProperty(e.key, i);
         }
-    }, $8fbcd235ba38df66$var$e = (i, e, n)=>{
+    }, $9cd908ed2625c047$var$e = (i, e, n)=>{
     e.constructor.createProperty(n, i);
 };
-function $8fbcd235ba38df66$export$d541bacb2bda4494(n) {
-    return (t, o)=>void 0 !== o ? $8fbcd235ba38df66$var$e(n, t, o) : $8fbcd235ba38df66$var$i(n, t);
+function $9cd908ed2625c047$export$d541bacb2bda4494(n) {
+    return (t, o)=>void 0 !== o ? $9cd908ed2625c047$var$e(n, t, o) : $9cd908ed2625c047$var$i(n, t);
 }
 
 
@@ -1196,8 +1196,8 @@ function $8fbcd235ba38df66$export$d541bacb2bda4494(n) {
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */ function $d728c145a8b96d94$export$ca000e230c0caa3e(t) {
-    return (0, $8fbcd235ba38df66$export$d541bacb2bda4494)({
+ */ function $04c21ea1ce1f6057$export$ca000e230c0caa3e(t) {
+    return (0, $9cd908ed2625c047$export$d541bacb2bda4494)({
         ...t,
         state: !0
     });
@@ -1206,14 +1206,16 @@ function $8fbcd235ba38df66$export$d541bacb2bda4494(n) {
 
 
 
-class $a399cc6bbb0eb26a$export$da0658243c468832 extends (0, $2c5bcddb34c9a397$export$3f2f9f5909897157) {
+class $a399cc6bbb0eb26a$export$da0658243c468832 extends (0, $ab210b2da7b39b9d$export$3f2f9f5909897157) {
     setConfig(config) {
-        this._header = config.header === "" ? (0, $1cb21db0eb1a0be5$export$45b790e32b2810ee) : config.header;
+        this._header = config.header === "" ? (0, $f58f44579a4747ac$export$45b790e32b2810ee) : config.header;
         this._sliders = config.sliders;
         if (this._hass) this.hass = this._hass;
     }
     set hass(hass) {
         this._hass = hass;
+        // Trigger update to pass hass to child components
+        this.requestUpdate();
     }
     _callAction(e) {
         const action = e.detail;
@@ -1229,10 +1231,10 @@ class $a399cc6bbb0eb26a$export$da0658243c468832 extends (0, $2c5bcddb34c9a397$ex
         }
     }
     render() {
-        let content = (0, $1cb21db0eb1a0be5$export$c0bb0b647f701bb5)`
-			${this._sliders.map((slider)=>(0, $1cb21db0eb1a0be5$export$c0bb0b647f701bb5)`<slide-confirm @call-action=${this._callAction} config="${slider}" />`)}
+        let content = (0, $f58f44579a4747ac$export$c0bb0b647f701bb5)`
+			${this._sliders.map((slider)=>(0, $f58f44579a4747ac$export$c0bb0b647f701bb5)`<slide-confirm .hass=${this._hass} @call-action=${this._callAction} .config="${slider}" />`)}
 		`;
-        return (0, $1cb21db0eb1a0be5$export$c0bb0b647f701bb5)`
+        return (0, $f58f44579a4747ac$export$c0bb0b647f701bb5)`
 			<ha-card header="${this._header}">
 				<div class="card-content">${content}</div>
 			</ha-card>
@@ -1248,14 +1250,14 @@ class $a399cc6bbb0eb26a$export$da0658243c468832 extends (0, $2c5bcddb34c9a397$ex
         };
     }
 }
-(0, $ebd43e508017a710$export$29e00dfd3077644b)([
-    (0, $d728c145a8b96d94$export$ca000e230c0caa3e)()
+(0, $24c52f343453d62d$export$29e00dfd3077644b)([
+    (0, $04c21ea1ce1f6057$export$ca000e230c0caa3e)()
 ], $a399cc6bbb0eb26a$export$da0658243c468832.prototype, "_header", void 0);
-(0, $ebd43e508017a710$export$29e00dfd3077644b)([
-    (0, $d728c145a8b96d94$export$ca000e230c0caa3e)()
+(0, $24c52f343453d62d$export$29e00dfd3077644b)([
+    (0, $04c21ea1ce1f6057$export$ca000e230c0caa3e)()
 ], $a399cc6bbb0eb26a$export$da0658243c468832.prototype, "_state", void 0);
-(0, $ebd43e508017a710$export$29e00dfd3077644b)([
-    (0, $d728c145a8b96d94$export$ca000e230c0caa3e)()
+(0, $24c52f343453d62d$export$29e00dfd3077644b)([
+    (0, $04c21ea1ce1f6057$export$ca000e230c0caa3e)()
 ], $a399cc6bbb0eb26a$export$da0658243c468832.prototype, "_sliders", void 0);
 
 
@@ -1282,14 +1284,14 @@ class $a399cc6bbb0eb26a$export$da0658243c468832 extends (0, $2c5bcddb34c9a397$ex
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */ const $1b379d642bebdcd8$export$29fd0ed4087278b5 = (e, t, o)=>{
+ */ const $25e9c5a8f7ecfc69$export$29fd0ed4087278b5 = (e, t, o)=>{
     Object.defineProperty(t, o, e);
-}, $1b379d642bebdcd8$export$18eb0154d0069a01 = (e, t)=>({
+}, $25e9c5a8f7ecfc69$export$18eb0154d0069a01 = (e, t)=>({
         kind: "method",
         placement: "prototype",
         key: t.key,
         descriptor: e
-    }), $1b379d642bebdcd8$export$757d561a932dc1cb = ({ finisher: e, descriptor: t })=>(o, n)=>{
+    }), $25e9c5a8f7ecfc69$export$757d561a932dc1cb = ({ finisher: e, descriptor: t })=>(o, n)=>{
         var r;
         if (void 0 === n) {
             const n = null !== (r = o.originalKey) && void 0 !== r ? r : o.key, i = null != t ? {
@@ -1316,8 +1318,8 @@ class $a399cc6bbb0eb26a$export$da0658243c468832 extends (0, $2c5bcddb34c9a397$ex
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */ function $5b7c5dc48a1578e2$export$2fa187e846a241c4(i, n) {
-    return (0, $1b379d642bebdcd8$export$757d561a932dc1cb)({
+ */ function $02a1f3a787c54a30$export$2fa187e846a241c4(i, n) {
+    return (0, $25e9c5a8f7ecfc69$export$757d561a932dc1cb)({
         descriptor: (o)=>{
             const t = {
                 get () {
@@ -1343,9 +1345,31 @@ class $a399cc6bbb0eb26a$export$da0658243c468832 extends (0, $2c5bcddb34c9a397$ex
 
 
 
-const $120c5a859c012378$export$1601f807332f51bf = (0, $53e576283d0b4ca1$export$dbf350e5966cf602)`
+const $120c5a859c012378$export$1601f807332f51bf = (0, $def2de46b9306e8a$export$dbf350e5966cf602)`
+  /* Dark mode detection and theme support */
+  :host {
+    --slide-text-color: var(--primary-text-color, var(--text-color, #212121));
+    --slide-background: var(--card-background-color, var(--primary-background-color, #fafafa));
+    --slide-border-color: var(--divider-color, rgba(0, 0, 0, 0.12));
+  }
+
+  /* Dark mode specific overrides */
+  @media (prefers-color-scheme: dark) {
+    :host {
+      --slide-text-color: var(--primary-text-color, var(--text-color, #ffffff));
+      --slide-background: var(--card-background-color, var(--primary-background-color, #121212));
+      --slide-border-color: var(--divider-color, rgba(255, 255, 255, 0.12));
+    }
+  }
+
+  .entity-state {
+    font-size: 0.8em;
+    color: var(--secondary-text-color);
+    margin: 4px 0;
+  }
+
   .slide-confirm{
-    color: var(--text-color);
+    color: var(--slide-text-color);
     border-radius:30px;
     padding:0;
     font-size:.75em;
@@ -1354,6 +1378,8 @@ const $120c5a859c012378$export$1601f807332f51bf = (0, $53e576283d0b4ca1$export$d
     -moz-user-select:none;
     -webkit-user-select:none;
     margin: 8px 0;
+    /* Dark mode support */
+    background: transparent;
   }
   
   .slide-confirm-track {
@@ -1362,7 +1388,7 @@ const $120c5a859c012378$export$1601f807332f51bf = (0, $53e576283d0b4ca1$export$d
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--slider-track-color);
+    background-color: var(--slider-color, var(--switch-unchecked-track-color, #e0e0e0));
     transition: background-color 500ms;
     opacity: 0.38;
     border-radius: 30px;
@@ -1377,6 +1403,9 @@ const $120c5a859c012378$export$1601f807332f51bf = (0, $53e576283d0b4ca1$export$d
     text-align: center;
     transform: translateY(-50%);
     font-size: 1rem;
+    color: var(--slide-text-color);
+    /* Ensure text is readable in dark mode */
+    text-shadow: none;
   }
   .slide-confirm-handle{
     position:relative;
@@ -1385,24 +1414,33 @@ const $120c5a859c012378$export$1601f807332f51bf = (0, $53e576283d0b4ca1$export$d
     width:50px;
     height:50px;
     border-radius:25px;
-    border: 1px solid var(--switch-unchecked-button-color);
-    background-color: var(--switch-unchecked-button-color);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    border: 1px solid var(--slider-color, var(--switch-unchecked-button-color, #e0e0e0));
+    background-color: var(--slider-color, var(--switch-unchecked-button-color, #fafafa));
+    /* Enhanced shadow for better visibility in dark mode */
+    box-shadow: 
+      rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, 
+      rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, 
+      rgba(0, 0, 0, 0.12) 0px 1px 5px 0px,
+      0 0 0 1px rgba(255, 255, 255, 0.1);
     box-sizing:border-box;
     text-align:center;
     font-size:20px;
     line-height: 1;
     font-family:serif;
-    color: var(--text-color);
+    color: var(--slide-text-color);
     user-select: none;
     touch-action: none;
-    transition: transform 300ms;
+    transition: transform 300ms, background-color 300ms, border-color 300ms;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .slide-confirm-handle.dragging {
     transition: none;
+  }
+  
+  .slide-confirm-handle.no-transition {
+    transition: none !important;
   }
   
   .slide-confirm-handle:hover {
@@ -1415,18 +1453,18 @@ const $120c5a859c012378$export$1601f807332f51bf = (0, $53e576283d0b4ca1$export$d
   }
 
   .slide-confirm.confirmed {
-    color: var(--text-color);
+    color: var(--slide-text-color);
   }
   
   .slide-confirm.confirmed .slide-confirm-track {
-    background-color: var(--switch-checked-track-color);
+    background-color: var(--slider-color, var(--switch-checked-track-color, #4caf50));
     opacity: 0.54;
   }
   
   .slide-confirm.confirmed .slide-confirm-handle {
-    border: 1px solid var(--switch-checked-button-color);
-    background-color: var(--switch-checked-button-color);
-    color: var(--app-header-text-color);
+    border: 1px solid var(--slider-color, var(--switch-checked-button-color, #4caf50));
+    background-color: var(--slider-color, var(--switch-checked-button-color, #4caf50));
+    color: var(--text-on-primary-color, var(--primary-background-color, white));
   }
   
   .slide-confirm .unconfirmed {
@@ -1447,24 +1485,126 @@ const $120c5a859c012378$export$1601f807332f51bf = (0, $53e576283d0b4ca1$export$d
 `;
 
 
-class $3fffcf1c09fcf223$export$eb0022d780a83cd2 extends (0, $2c5bcddb34c9a397$export$3f2f9f5909897157) {
+class $3fffcf1c09fcf223$export$eb0022d780a83cd2 extends (0, $ab210b2da7b39b9d$export$3f2f9f5909897157) {
     static{
         this.styles = (0, $120c5a859c012378$export$1601f807332f51bf);
     }
+    constructor(){
+        super(), this._confirmed = false, this._isDragging = false;
+    }
+    connectedCallback() {
+        super.connectedCallback();
+    }
+    updated(changedProperties) {
+        super.updated(changedProperties);
+        // Check if entity state actually changed when hass updates
+        if (changedProperties.has('hass') && this.hass && this.config?.entity) {
+            const currentState = this.hass.states[this.config.entity]?.state;
+            // Check if this is the first time we're setting the state
+            const isFirstLoad = this._lastKnownState === undefined;
+            // Only update if state actually changed AND we're not currently dragging
+            if (currentState !== this._lastKnownState && !this._isDragging) {
+                this._lastKnownState = currentState;
+                // Update handle position when entity state changes
+                if (this._handle && this._container) // Use setTimeout to allow DOM to settle first
+                setTimeout(()=>{
+                    // Animate only if it's NOT the first load
+                    this._updateHandlePosition(!isFirstLoad);
+                }, isFirstLoad ? 50 : 10);
+            }
+        }
+    }
+    disconnectedCallback() {
+        super.disconnectedCallback();
+    }
+    _updateHandlePosition(animate = false) {
+        // Don't update position while dragging
+        if (!this._handle || !this._container || this._isDragging) return;
+        // Control animation via CSS class instead of inline styles
+        if (!animate) this._handle.classList.add('no-transition');
+        else this._handle.classList.remove('no-transition');
+        // Get current entity state directly from hass every time
+        const currentState = this.hass?.states?.[this.config?.entity]?.state;
+        const isOn = currentState === 'on';
+        if (isOn) {
+            // Entity is ON, position handle at right
+            const maxX = this._container.clientWidth - this._handle.clientWidth;
+            this._handle.style.transform = `translateX(${maxX}px)`;
+        } else // Entity is OFF, position handle at left
+        this._handle.style.transform = `translateX(0px)`;
+        // Force reflow to ensure the position is set without animation
+        if (!animate) {
+            this._handle.offsetHeight; // Force reflow
+            setTimeout(()=>{
+                if (this._handle) this._handle.classList.remove('no-transition');
+            }, 50);
+        }
+    }
+    get _isEntityOn() {
+        // Always get fresh state from hass
+        const currentState = this.hass?.states?.[this.config?.entity]?.state;
+        // Simple but effective: most entities use 'on'/'off'
+        // For other types, we can extend this later if needed
+        return currentState === 'on';
+    }
+    get _currentAction() {
+        // Return the appropriate action based on entity state
+        if (this._isEntityOn) return this.config.action_when_on;
+        else return this.config.action_when_off;
+    }
+    get _currentText() {
+        if (this._isEntityOn) return this.config.text_when_on || 'Slide to turn off';
+        else return this.config.text_when_off || 'Slide to turn on';
+    }
+    get _currentIcon() {
+        if (this._isEntityOn) return this.config.icon_when_on || 'mdi:lightbulb-on';
+        else return this.config.icon_when_off || 'mdi:lightbulb-off';
+    }
+    get _currentColor() {
+        if (this._isEntityOn) return this.config.color_when_on;
+        else return this.config.color_when_off;
+    }
+    get _sliderPosition() {
+        // Links = uit, rechts = aan
+        return this._isEntityOn ? 'right' : 'left';
+    }
     dragStart(e) {
         if (this._confirmed) return;
+        this._isDragging = true;
         this._handle.classList.add("dragging");
         this._handle.onpointermove = this.drag.bind(this);
         this._handle.setPointerCapture(e.pointerId);
+        // Remove any transition for immediate drag response
+        this._handle.style.transition = '';
+        // Set initial position based on entity state
+        // Links = uit (OFF), rechts = aan (ON)
+        if (this._isEntityOn) {
+            // Entity is ON, handle starts at right position
+            const maxX = this._container.clientWidth - this._handle.clientWidth;
+            this._handle.style.transform = `translateX(${maxX}px)`;
+        } else // Entity is OFF, handle starts at left position
+        this._handle.style.transform = `translateX(0px)`;
     }
     dragEnd(e) {
         let x = this._calculateX(e);
-        if (x + e.target.clientWidth === this._container.clientWidth && !this._confirmed) {
+        let confirmed = false;
+        // Clean up drag state FIRST
+        this._handle.classList.remove("dragging");
+        this._handle.onpointermove = null;
+        this._handle.releasePointerCapture(e.pointerId);
+        this._isDragging = false;
+        // Determine if action should be triggered based on slide direction and entity state
+        if (this._isEntityOn) // Entity is ON, slide from right to left to turn OFF
+        confirmed = x <= 0;
+        else // Entity is OFF, slide from left to right to turn ON
+        confirmed = x + e.target.clientWidth >= this._container.clientWidth;
+        if (confirmed && !this._confirmed) {
             this._confirmed = true;
             this._container.classList.add("confirmed");
-            if (this.config.confirm_action) {
+            const actionToExecute = this._currentAction;
+            if (actionToExecute) {
                 const payload = {
-                    detail: this.config.confirm_action,
+                    detail: actionToExecute,
                     bubbles: true,
                     composed: true
                 };
@@ -1473,12 +1613,13 @@ class $3fffcf1c09fcf223$export$eb0022d780a83cd2 extends (0, $2c5bcddb34c9a397$ex
             setTimeout(()=>{
                 this._container.classList.remove("confirmed");
                 this._confirmed = false;
+                // Wait a bit for the entity state to update, then reset handle position with animation
+                setTimeout(()=>{
+                    this._updateHandlePosition(true);
+                }, 100);
             }, 1500);
-        }
-        this._handle.classList.remove("dragging");
-        this._handle.onpointermove = null;
-        this._handle.releasePointerCapture(e.pointerId);
-        this._handle.style.transform = `translateX(0)`;
+        } else // Reset handle to current entity state position immediately with animation
+        this._updateHandlePosition(true);
     }
     _calculateX(e) {
         let bounds = this._container.getBoundingClientRect();
@@ -1489,51 +1630,64 @@ class $3fffcf1c09fcf223$export$eb0022d780a83cd2 extends (0, $2c5bcddb34c9a397$ex
         return x;
     }
     drag(e) {
+        // Remove any existing transition during drag
+        this._handle.style.transition = '';
         this._handle.style.transform = `translateX(${this._calculateX(e)}px)`;
     }
     render() {
         let content;
-        content = (0, $1cb21db0eb1a0be5$export$c0bb0b647f701bb5)`
-			${this.config.icon ? (0, $1cb21db0eb1a0be5$export$c0bb0b647f701bb5)`<ha-icon icon="${this.config.icon}" />` : ''}
-			${this.config.name ? (0, $1cb21db0eb1a0be5$export$c0bb0b647f701bb5)`<span class="slide-name">${this.config.name}</span>` : ''}
-			${this.config.label ? (0, $1cb21db0eb1a0be5$export$c0bb0b647f701bb5)`<span class="slide-label">${this.config.label}</span>` : ''}
-			<div class="slide-confirm">
+        // Get current state and display values
+        const entityState = this.hass?.states?.[this.config?.entity]?.state || 'unknown';
+        const isOn = this._isEntityOn;
+        const currentText = this._currentText;
+        const currentIcon = this._currentIcon;
+        const currentColor = this._currentColor;
+        const sliderPosition = this._sliderPosition;
+        content = (0, $f58f44579a4747ac$export$c0bb0b647f701bb5)`
+			${this.config.icon ? (0, $f58f44579a4747ac$export$c0bb0b647f701bb5)`<ha-icon icon="${this.config.icon}" />` : ''}
+			${this.config.name ? (0, $f58f44579a4747ac$export$c0bb0b647f701bb5)`<span class="slide-name">${this.config.name}</span>` : ''}
+			${this.config.label ? (0, $f58f44579a4747ac$export$c0bb0b647f701bb5)`<span class="slide-label">${this.config.label}</span>` : ''}
+			<div class="slide-confirm ${isOn ? 'entity-on' : 'entity-off'}" 
+			     data-position="${sliderPosition}"
+			     style="${currentColor ? `--slider-color: ${currentColor};` : ''}">
 				<div class="slide-confirm-track"></div>
-				<div class="slide-confirm-text unconfirmed">${this.config.textUnconfirmed}</div>
-				<div class="slide-confirm-text confirmed">${this.config.textConfirmed}</div>
+				<div class="slide-confirm-text unconfirmed">${currentText}</div>
+				<div class="slide-confirm-text confirmed">Action completed!</div>
 				<div class="slide-confirm-handle"
 				     @touchstart="${(e)=>this.dragStart(e)}"
 				     @touchend="${(e)=>this.dragEnd(e)}"
 				     @pointerdown="${(e)=>this.dragStart(e)}"
 				     @pointerup="${(e)=>this.dragEnd(e)}" >
-					<div class="slide-confirm-icon unconfirmed">
-						<ha-icon icon="${this.config.iconUnconfirmed}" />
-					</div>
-					<div class="slide-confirm-icon confirmed">
-						<ha-icon icon="${this.config.iconConfirmed}" />
+					<div class="slide-confirm-icon">
+						<ha-icon icon="${currentIcon}" />
 					</div>
 				</div>
 			</div>
 		`;
         return content;
     }
-    constructor(...args){
-        super(...args), this._confirmed = false;
-    }
 }
-(0, $ebd43e508017a710$export$29e00dfd3077644b)([
-    (0, $8fbcd235ba38df66$export$d541bacb2bda4494)({
-        attribute: true
+(0, $24c52f343453d62d$export$29e00dfd3077644b)([
+    (0, $9cd908ed2625c047$export$d541bacb2bda4494)({
+        attribute: false
+    })
+], $3fffcf1c09fcf223$export$eb0022d780a83cd2.prototype, "hass", void 0);
+(0, $24c52f343453d62d$export$29e00dfd3077644b)([
+    (0, $9cd908ed2625c047$export$d541bacb2bda4494)({
+        attribute: false
     })
 ], $3fffcf1c09fcf223$export$eb0022d780a83cd2.prototype, "config", void 0);
-(0, $ebd43e508017a710$export$29e00dfd3077644b)([
-    (0, $d728c145a8b96d94$export$ca000e230c0caa3e)()
+(0, $24c52f343453d62d$export$29e00dfd3077644b)([
+    (0, $04c21ea1ce1f6057$export$ca000e230c0caa3e)()
 ], $3fffcf1c09fcf223$export$eb0022d780a83cd2.prototype, "_confirmed", void 0);
-(0, $ebd43e508017a710$export$29e00dfd3077644b)([
-    (0, $5b7c5dc48a1578e2$export$2fa187e846a241c4)(".slide-confirm")
+(0, $24c52f343453d62d$export$29e00dfd3077644b)([
+    (0, $04c21ea1ce1f6057$export$ca000e230c0caa3e)()
+], $3fffcf1c09fcf223$export$eb0022d780a83cd2.prototype, "_isDragging", void 0);
+(0, $24c52f343453d62d$export$29e00dfd3077644b)([
+    (0, $02a1f3a787c54a30$export$2fa187e846a241c4)(".slide-confirm")
 ], $3fffcf1c09fcf223$export$eb0022d780a83cd2.prototype, "_container", void 0);
-(0, $ebd43e508017a710$export$29e00dfd3077644b)([
-    (0, $5b7c5dc48a1578e2$export$2fa187e846a241c4)(".slide-confirm-handle")
+(0, $24c52f343453d62d$export$29e00dfd3077644b)([
+    (0, $02a1f3a787c54a30$export$2fa187e846a241c4)(".slide-confirm-handle")
 ], $3fffcf1c09fcf223$export$eb0022d780a83cd2.prototype, "_handle", void 0);
 
 

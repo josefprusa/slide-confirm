@@ -1,78 +1,143 @@
-# Slide to Confirm
+# Slide to Confirm KNUTS
 
-This is a custom card for [Home Assistant](https://www.home-assistant.io) designed to prevent accidental button presses by requiring the user perform a successful sliding action from left to right to trigger a service.
+This is a custom card for [Home Assistant](https://www.home-assistant.io) designed to prevent accidental button presses by requiring the user perform a successful sliding action to trigger a service.
 
-Use case: You have a button that can remotely unlock your front door, but you most likely don't have an automated method to close the door if it was opened accidentally.  Slide to Confirm requires that you slide the indicator across the card to perform an action.
+**NEW: State-Aware Functionality** - The slider now shows the current entity state and adapts its behavior accordingly. Left position = OFF, Right position = ON.
 
-This is quite rudimentary and was created for my own needs, but I'm happy to share it with the community and incorporate any improvements you want to add through pull requests.
-
-## Screenshot
-![Screenshot](https://github.com/itsbrianburton/slide-confirm/raw/main/img/screenshot.png)
-
-## Screencast
-https://github.com/itsbrianburton/slide-confirm/assets/29252421/086edb77-23ae-4556-b6ee-6a4669253dd2
+Use case: You have switches, lights, or other entities that you want to control with confirmation, and you want to see their current state. The slider position reflects the entity state and you can slide to change it.
 
 ## Usage
-After installation, edit your dashboard and click the "Add Card" button.  Choose the "Manual" box at the very bottom.  The card must be configured manually as shown here:
+After installation, edit your dashboard and click the "Add Card" button. Choose the "Manual" box at the very bottom. The card must be configured manually as shown here:
 
 ```yaml
 # REQUIRED: Specify the card
 type: custom:slide-confirm-card
 # REQUIRED: A list of sliders to display
 sliders:
-    # Text that appears above the slider
-  - name: Front Door
-    # An icon to appear in front of the name
-    icon: mdi:door
-    # Default text that appears in the slider
-    textUnconfirmed: Slide to Unlock
-    # Text that appears when an action is confirmed
-    textConfirmed: Door Unlocked!
-    # Default icon that appears in the slider knob
-    iconUnconfirmed: mdi:lock
-    # Icon that appears in the slider knob when an action is confirmed
-    iconConfirmed: mdi:lock-open
-    confirm_action:
-      # Note that only service calls are currently supported!
+  # State-aware slider example
+  - name: Living Room Light
+    icon: mdi:lightbulb
+    # REQUIRED: Entity to monitor state
+    entity: light.living_room
+    # Text shown when entity is OFF
+    text_when_off: "Slide to turn on"
+    # Text shown when entity is ON  
+    text_when_on: "Slide to turn off"
+    # Icons for different states
+    icon_when_off: mdi:lightbulb-off
+    icon_when_on: mdi:lightbulb-on
+    # Action when sliding while entity is OFF (will turn ON)
+    action_when_off:
       action: call-service
-      # Example service to call
-      service: input_boolean.turn_on
+      service: light.turn_on
       target:
-        # Target entity
-        entity_id: input_boolean.slide_confirm
-  - name: Front door fingerprint reader
-    icon: mdi:fingerprint
-    textUnconfirmed: Slide to start enrolling
-    textConfirmed: Enroll started!
-    iconUnconfirmed: mdi:lock
-    iconConfirmed: mdi:lock-open
-    confirm_action:
+        entity_id: light.living_room
+    # Action when sliding while entity is ON (will turn OFF)
+    action_when_on:
       action: call-service
-      service: esphome.fingerprint_enroll
-      data:
-        # Service data
-        finger_id: 1
-        num_scans: 5
-  - name: Back Door
-    textUnconfirmed: Slide to Unlock
-    textConfirmed: Door Unlocked!
-    iconUnconfirmed: mdi:lock
-    iconConfirmed: mdi:lock-open
-    confirm_action:
-      action: call-service
-      service: input_boolean.turn_on
+      service: light.turn_off
       target:
-        # Target device
-        device_id: device123
-  - name: Garage Doors
-    textUnconfirmed: Slide to Unlock
-    textConfirmed: Doors Unlocked!
-    iconUnconfirmed: mdi:lock
-    iconConfirmed: mdi:lock-open
-    confirm_action:
+        entity_id: light.living_room
+
+  # Switch example with custom colors
+  - name: Smart Switch
+    icon: mdi:power
+    entity: switch.smart_switch
+    text_when_off: "Slide to turn on"
+    text_when_on: "Slide to turn off"
+    icon_when_off: mdi:power-off
+    icon_when_on: mdi:power-on
+    color_when_off: "#ff5722"  # Orange for OFF state
+    color_when_on: "#4caf50"   # Green for ON state
+    action_when_off:
       action: call-service
-      service: input_boolean.turn_on
+      service: switch.turn_on
       target:
-        # Target area
-        area_id: garage
+        entity_id: switch.smart_switch
+    action_when_on:
+      action: call-service
+      service: switch.turn_off
+      target:
+        entity_id: switch.smart_switch
 ```
+
+## Configuration Options
+
+### Card Configuration
+- `type`: `custom:slide-confirm-card` (required)
+- `sliders`: Array of slider configurations (required)
+
+### Slider Configuration
+- `name`: Display name for the slider (required)
+- `entity`: Home Assistant entity ID to monitor for state (required)
+- `icon`: Icon to display next to the name
+- `text_when_off`: Text shown when entity is OFF
+- `text_when_on`: Text shown when entity is ON
+- `icon_when_off`: Icon shown when entity is OFF
+- `icon_when_on`: Icon shown when entity is ON
+- `color_when_off`: Custom color for slider when entity is OFF (e.g., "#ff5722", "orange", "rgb(255, 87, 34)")
+- `color_when_on`: Custom color for slider when entity is ON (e.g., "#4caf50", "green", "rgb(76, 175, 80)")
+- `action_when_off`: Action to execute when sliding while entity is OFF
+- `action_when_on`: Action to execute when sliding while entity is ON
+
+### Action Configuration
+- `action`: Currently only `call-service` is supported
+- `service`: Home Assistant service to call (e.g., `light.turn_on`, `switch.turn_off`)
+- `target`: Target for the service call
+  - `entity_id`: Target specific entity(ies)
+  - `device_id`: Target specific device(ies)  
+  - `area_id`: Target specific area(s)
+- `data`: Additional data to pass to the service
+
+## Color Customization
+
+You can customize the slider colors for different states:
+
+```yaml
+- name: Colorful Light
+  entity: light.bedroom
+  text_when_off: "Slide to turn on"
+  text_when_on: "Slide to turn off"
+  color_when_off: "#ff5722"     # Orange when OFF
+  color_when_on: "#4caf50"      # Green when ON
+  action_when_off:
+    action: call-service
+    service: light.turn_on
+    target:
+      entity_id: light.bedroom
+  action_when_on:
+    action: call-service
+    service: light.turn_off
+    target:
+      entity_id: light.bedroom
+```
+
+Colors can be specified in any CSS format:
+- Hex colors: `#ff5722`, `#4caf50`
+- Named colors: `red`, `green`, `blue`
+- RGB values: `rgb(255, 87, 34)`
+- CSS variables: `var(--primary-color)`
+
+If no custom colors are specified, the slider will use your Home Assistant theme's default colors.
+
+## Dark Mode Support
+
+The card automatically adapts to your Home Assistant theme, including dark mode:
+
+- **Automatic Detection**: Follows your HA theme settings (light/dark mode)
+- **Theme Integration**: Uses HA CSS variables for consistent styling
+- **Custom Colors**: Your custom colors work in both light and dark themes
+- **Fallback Support**: Graceful fallbacks if theme variables are missing
+
+The slider will automatically adjust text colors, backgrounds, and shadows to ensure optimal visibility in both light and dark themes.
+
+## How It Works
+
+1. **State Detection**: The card monitors the specified entity's state
+2. **Visual Position**: 
+   - Left position = Entity is OFF
+   - Right position = Entity is ON
+3. **Slide Actions**:
+   - When OFF: Slide left to right → Execute `action_when_off`
+   - When ON: Slide right to left → Execute `action_when_on`
+4. **Real-time Updates**: The slider position updates automatically when the entity state changes

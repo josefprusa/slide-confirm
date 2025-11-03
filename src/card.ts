@@ -8,6 +8,7 @@ import { SlideConfirmButtonConfig } from './slide-confirm';
 interface Config extends LovelaceCardConfig {
 	header: string;
 	entity: string;
+	sliders: Array<SlideConfirmButtonConfig>;
 }
 
 export class SlideConfirmCard extends LitElement {
@@ -28,6 +29,8 @@ export class SlideConfirmCard extends LitElement {
 
 	set hass(hass: HomeAssistant) {
 		this._hass = hass;
+		// Trigger update to pass hass to child components
+		this.requestUpdate();
 	}
 
 	private _callAction(e: CustomEvent) {
@@ -59,7 +62,7 @@ export class SlideConfirmCard extends LitElement {
 	render() {
 		let content: TemplateResult = html`
 			${this._sliders.map((slider) =>
-				html`<slide-confirm @call-action=${this._callAction} config="${slider}" />`
+				html`<slide-confirm .hass=${this._hass} @call-action=${this._callAction} .config="${slider}" />`
 			)}
 		`;
 
