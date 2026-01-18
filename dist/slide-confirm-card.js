@@ -1701,4 +1701,4 @@ window.customCards.push({
 });
 
 
-//# sourceMappingURL=slide-confirm.js.map
+//# sourceMappingURL=slide-confirm-card.js.map

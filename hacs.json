@@ -1,6 +1,6 @@
 {
-	"name": "Slide to Confirm KNUTS",
+	"name": "Slide Confirm Card",
 	"render_readme": true,
-	"filename": "slide-confirm.js",
+	"filename": "slide-confirm-card.js",
 	"content_in_root": false
 }
