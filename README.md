@@ -1,4 +1,6 @@
-# Slide to Confirm KNUTS
+# Slide Confirm Card
+
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/hacs/integration)
 
 This is a custom card for [Home Assistant](https://www.home-assistant.io) designed to prevent accidental button presses by requiring the user perform a successful sliding action to trigger a service.
 
@@ -6,8 +8,37 @@ This is a custom card for [Home Assistant](https://www.home-assistant.io) design
 
 Use case: You have switches, lights, or other entities that you want to control with confirmation, and you want to see their current state. The slider position reflects the entity state and you can slide to change it.
 
+## Installation
+
+### HACS (recommended)
+1. In Home Assistant, go to **HACS → Frontend → + Explore & Add Repositories**.
+2. Search for **Slide Confirm Card** (or add this repository as a custom repository under **Frontend**).
+3. Install the repository and refresh your browser.
+
+HACS will automatically add a Lovelace resource pointing to:
+
+```
+/hacsfiles/slide-confirm-card/slide-confirm-card.js
+```
+
+### Manual
+1. Download `slide-confirm-card.js` from the latest release.
+2. Copy it to your Home Assistant config directory:
+
+```
+www/community/slide-confirm-card/slide-confirm-card.js
+```
+
+3. In Home Assistant, go to **Settings → Dashboards → Resources** and add:
+
+```
+/local/community/slide-confirm-card/slide-confirm-card.js
+```
+
+Set the resource type to **JavaScript Module**.
+
 ## Usage
-After installation, edit your dashboard and click the "Add Card" button. Choose the "Manual" box at the very bottom. The card must be configured manually as shown here:
+After installation, edit your dashboard and click the "Add Card" button. Choose the "Manual" box at the very bottom. The card must be configured manually as shown here (no visual editor support yet):
 
 ```yaml
 # REQUIRED: Specify the card
@@ -130,6 +161,15 @@ The card automatically adapts to your Home Assistant theme, including dark mode:
 - **Fallback Support**: Graceful fallbacks if theme variables are missing
 
 The slider will automatically adjust text colors, backgrounds, and shadows to ensure optimal visibility in both light and dark themes.
+
+## Development
+
+Build the production bundle into `dist/slide-confirm-card.js`:
+
+```bash
+npm install
+npm run build
+```
 
 ## How It Works
 

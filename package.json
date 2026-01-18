@@ -4,7 +4,7 @@
 	"description": "Custom card for Home Assistant to prevent accidental button presses with dark mode support.",
 	"author": "Brian Burton",
 	"source": "src/index.ts",
-	"module": "dist/slide-confirm.js",
+	"module": "dist/slide-confirm-card.js",
 	"targets": {
 		"module": {
 			"includeNodeModules": true
